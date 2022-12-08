@@ -1,19 +1,27 @@
+:root {
+    font-size: 10px;
+}
 body {
-    font-family: Raleway;
-    font-size: 18px;
+    font-family: "Raleway", sans-serif;
+    font-weight: 400;
+    font-size: 1.8rem;
+    margin: 0;
+    padding-top: 100px;
 }
 h2 {
-    font-size: 36px;
+    font-size: 3.6rem;
+    font-weight: 400;
 }
 h3, h4 {
-    font-family: Open Sans Bold;
+    font-family: Open Sans Bold, sans-serif;
+    font-weight: 700;
 } 
 h3 {    
-    font-size: 30px;
+    font-size: 3rem;
     margin-bottom: 42px;
 }
 h4 {
-    font-size: 24px;
+    font-size: 2.4rem;
 }
 section {
     display: flex;
@@ -49,13 +57,14 @@ button {
 }
 .button_filled {
     background-color: #EC7979;
-    font-size: 18px;
+    font-size: 1.8rem;
     font-family: Open Sans Semibold;
     color: #fff;
     border: 0;
     outline: none;
 }
-.button_filled:hover {
+.button_filled:hover,
+.button_filled:focus-visible {
     background-color: #AB4949;
 }
 .button_filled:active {
