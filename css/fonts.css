@@ -1,0 +1,16 @@
+@font-face {
+    font-family: 'Raleway';
+    src: local('Raleway'), url('../fonts/Raleway-Regular.woff') format('woff');
+}
+@font-face {
+    font-family: 'Open Sans';
+    src: local('Open Sans'), url('../fonts/OpenSans-Regular.woff') format('woff');
+}
+@font-face {
+    font-family: 'Open Sans Semibold';
+    src: local('Open Sans Semibold'), url('../fonts/OpenSans-SemiBold.woff') format('woff');
+}
+@font-face {
+    font-family: 'Open Sans Bold';
+    src: local('Open Sans Bold'), url('../fonts/OpenSans-Bold.woff') format('woff');
+}
