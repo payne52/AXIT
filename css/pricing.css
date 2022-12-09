@@ -1,0 +1,46 @@
+.pricing {
+    background-color: #F5F5F5;
+}
+.pricing__options {
+    display: flex;    
+    align-items: flex-start;
+    margin: -15px -15px 0;
+}
+.pricing__option {
+    flex-grow: 1;
+    text-align: center;
+    margin: 0 15px;
+}
+.pricing__option:nth-child(2) {
+    margin-top: -20px;
+    box-shadow: 0 4px 10px rgba(51, 51, 51, 0.2);
+}
+.pricing__option__title,
+.pricing__option__price,
+.pricing__option__description {
+    color: #fff;
+    background-color: #333;
+    border: 1px solid #F5F5F5;
+    margin: 0;
+}
+.pricing__option__title {
+    line-height: 60px;
+}
+.pricing__option__price {
+    font-family: 'Raleway-Bold', sans-serif;
+    line-height: 100px;
+}
+.pricing__option__description {
+    line-height: 50px;    
+}
+.pricing__option__items-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.pricing__option__item {
+    background-color: #fff;
+    color: #86878B;
+    line-height: 50px;
+    border: 1px solid #F5F5F5;
+}
