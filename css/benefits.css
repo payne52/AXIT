@@ -19,6 +19,6 @@
 }
 .benefits__list-item:hover .benefits__icon {
     transform: rotate(360deg);
-    transition: 0.75s;
+    transition: 0.2s;
     transition-timing-function: ease-in-out;
 }

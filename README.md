@@ -4,7 +4,7 @@
 
 *HTML, CSS*
 
-Layout of a landing-page site according to a template.
+Layout of a landing-page site according to a [template](https://www.figma.com/file/NMy77nb3wtYugDrIF2rkun/TMS_front-(Copy)?node-id=617%3A1270&t=8BQpehdiECxBsDa7-1).
 
 ---
 

@@ -1,14 +1,16 @@
 body {
-    font-family: 'Raleway', sans-serif;    
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;    
     font-size: 18px;
     margin: 0;
-    padding-top: 100px;
 }
 h2 {
     font-size: 2em;
+    font-weight: 400;
 }
 h3, h4 {
-    font-family: 'Open Sans Bold', sans-serif;    
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
 } 
 h3 {    
     font-size: 1.66em;
@@ -18,13 +20,12 @@ h4 {
     font-size: 1.33em;
 }
 section {
-    display: flex;
-    justify-content: center;
     padding-bottom: 50px;
 }
 .container {
     width: 100%;
     max-width: 1170px;
+    margin: 0 auto;
 }
 .section__title {
     text-align: center;
@@ -52,8 +53,9 @@ button {
 }
 .button_filled {
     background-color: #EC7979;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
     font-size: 1em;
-    font-family: 'Open Sans Semibold';
     color: #fff;
     border: 0;
     outline: none;
