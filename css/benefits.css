@@ -1,0 +1,24 @@
+.benefits__list {
+    display: flex;
+    list-style-type: none;
+    text-align: center;
+    padding: 0;
+}
+.benefits__list-item {
+    padding: 15px;
+}
+.benefits__icon-block {
+    width: 92px;
+    height: 92px;
+    border: 1px solid #EC7979;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 74px auto;
+}
+.benefits__list-item:hover .benefits__icon {
+    transform: rotate(360deg);
+    transition: 0.2s;
+    transition-timing-function: ease-in-out;
+}

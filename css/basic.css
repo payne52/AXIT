@@ -1,27 +1,31 @@
 body {
-    font-family: Raleway;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;    
     font-size: 18px;
+    margin: 0;
 }
 h2 {
-    font-size: 36px;
+    font-size: 2em;
+    font-weight: 400;
 }
 h3, h4 {
-    font-family: Open Sans Bold;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
 } 
 h3 {    
-    font-size: 30px;
+    font-size: 1.66em;
     margin-bottom: 42px;
 }
 h4 {
-    font-size: 24px;
+    font-size: 1.33em;
 }
 section {
-    display: flex;
-    justify-content: center;
     padding-bottom: 50px;
 }
 .container {
+    width: 100%;
     max-width: 1170px;
+    margin: 0 auto;
 }
 .section__title {
     text-align: center;
@@ -49,13 +53,15 @@ button {
 }
 .button_filled {
     background-color: #EC7979;
-    font-size: 18px;
-    font-family: Open Sans Semibold;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 1em;
     color: #fff;
     border: 0;
     outline: none;
 }
-.button_filled:hover {
+.button_filled:hover,
+.button_filled:focus-visible {
     background-color: #AB4949;
 }
 .button_filled:active {

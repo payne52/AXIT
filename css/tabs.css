@@ -1,3 +1,6 @@
+.tabs {
+    padding-top: 100px;
+}
 .tabs__selectors {
     margin: 0;
     padding: 0;
@@ -10,8 +13,8 @@
     border: 1px solid #fff;
     border-bottom: 0;
     border-radius: 5px 5px 0 0;
-    font-family: Open Sans;
-    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.77em;
     text-transform: uppercase;
     line-height: 40px;
     width: 200px;
@@ -44,23 +47,3 @@
 .tabs__image img {
     display: block;
 }
-.benefits__list {
-    display: flex;
-    list-style-type: none;
-    text-align: center;
-    padding: 0;
-}
-.benefits__list-item {
-    padding: 15px;
-}
-.benefits__icon {
-    width: 92px;
-    height: 92px;
-    border: 1px solid #EC7979;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto 74px auto;
-}
-
