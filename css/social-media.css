@@ -9,8 +9,7 @@
     width: 40%;
 }
 .social-media__description__title {
-    margin: 0px;
-    padding: 20px 0;
+    margin: 20px 0 38px;
 }
 .social-media__description__text {
     color: #86878B;
@@ -19,12 +18,10 @@
     flex-grow: 1;
 }
 .social-media__icons__list {
-    margin: 0;
-    padding: 0 0 0 30px;
-    height: 100%;
+    margin: 35px 0 0;
+    padding: 0 0 0 30px;    
     display: flex;
     justify-content: space-between;
-    align-items: center;
     list-style-type: none;
 }
 .social-media__icons__link {
