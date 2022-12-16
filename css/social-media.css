@@ -15,7 +15,7 @@
     color: #86878B;
 }
 .social-media__icons {
-    flex-grow: 1;
+    flex: 1;
 }
 .social-media__icons__list {
     margin: 35px 0 0;
