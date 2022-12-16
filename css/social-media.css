@@ -1,0 +1,35 @@
+.social-media {
+    background-color: #F8EFEF;
+    padding-bottom: 0;
+}
+.social-media > .container {
+    display: flex;
+}
+.social-media__description {
+    width: 40%;
+}
+.social-media__description__title {
+    margin: 20px 0 38px;
+}
+.social-media__description__text {
+    color: #86878B;
+}
+.social-media__icons {
+    flex-grow: 1;
+}
+.social-media__icons__list {
+    margin: 35px 0 0;
+    padding: 0 0 0 30px;    
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+}
+.social-media__icons__link {
+    display: block;
+    width: 70px;
+    line-height: 70px;
+    text-align: center;
+}
+.social-media__icons__icon {
+    vertical-align: middle;
+}
