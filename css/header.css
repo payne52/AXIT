@@ -23,7 +23,7 @@
     font-size: 0.77em;
     color: #fff;
     text-decoration: none;
-    transition-duration: .2s;
+    transition-duration: .1s;
 }
 .header__menu-link:hover {
     color: #EC7979;

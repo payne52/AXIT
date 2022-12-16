@@ -5,6 +5,11 @@
 }
 @font-face {
     font-family: 'Raleway';
+    font-weight: 500;
+    src: local('Raleway Medium'), url('../fonts/Raleway-Medium.woff') format('woff');    
+}
+@font-face {
+    font-family: 'Raleway';
     font-weight: 700;
     src: local('Raleway Bold'), url('../fonts/Raleway-Bold.woff') format('woff');
 }
