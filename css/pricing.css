@@ -17,7 +17,7 @@
 }
 .pricing__option__title,
 .pricing__option__price,
-.pricing__option__description {
+.pricing__option__description-text {
     color: #fff;
     background-color: #333;
     border: 1px solid #F5F5F5;
@@ -35,7 +35,7 @@
     font-size: 2em;
     line-height: 100px;
 }
-.pricing__option__description {
+.pricing__option__description-text {
     line-height: 50px;    
 }
 .pricing__option__items-list {

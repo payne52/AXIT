@@ -25,6 +25,10 @@ h3 {
 h4 {
     font-size: 1.33em;
 }
+h5 {
+    font-weight: 400; 
+    font-size: 1em;
+}
 section {
     padding-bottom: 50px;
 }
@@ -47,7 +51,7 @@ section {
     width: 170px;
     border-bottom: 1px solid #EC7979;
 }
-.section__description {
+.section__description-text {
     color: #86878B;
     text-align: center;
     margin: 40px 0 95px;

@@ -1,6 +1,6 @@
 # AXIT
 
-## 0.6.0
+## 0.7.0
 
 *HTML, CSS*
 
@@ -10,6 +10,12 @@ Layout of a landing-page site according to a [Figma template](https://www.figma.
 ---
 
 ## Updates
+
+#### 0.7.0
+
+*17/12/2022*
+
+- created section "Reviews"
 
 #### 0.6.0
 

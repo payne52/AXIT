@@ -1,0 +1,42 @@
+.reviews__authors {
+    display: grid;
+    column-gap: 30px;
+    row-gap: 65px;
+    grid-template-columns: repeat(3, 1fr);    
+    grid-template-rows: repeat(2, auto);
+    grid-auto-flow: column;
+}
+.reviews__author__message {
+    display: flex;
+    align-items: center;
+    background-color: #E2E2E2;
+    border-radius: 10px;
+    padding: 40px 20px;
+    position: relative;
+}
+.reviews__author__message::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    border-top: 20px solid #E2E2E2;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    position: absolute;
+    bottom: -20px;
+    left: 20%;
+}
+.reviews__author__message-text {
+    color: #86878B;
+    text-align: center;
+    margin: 0;
+}
+.reviews__author__information {
+    display: flex;
+}
+.reviews__author__name {
+    margin: 20px 0 35px 30px;
+}
+.reviews__author__post {
+    margin: 0 0 15px 30px;
+}
