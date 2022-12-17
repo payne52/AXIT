@@ -1,0 +1,29 @@
+.banner-2 {
+    background-image: url(../images/banner-2.webp);
+    background-position: center bottom;
+    position: relative;    
+    text-align: center;
+}
+.banner-2::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+.banner-2__title,
+.banner-2__description-text {
+    color: #fff;
+}
+.banner-2__title::after {
+    border-color: #fff;
+}
+.banner-2__description-text {
+    margin-bottom: 75px;
+}
+.banner-2__button {
+    width: 370px;
+}

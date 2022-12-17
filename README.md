@@ -1,6 +1,6 @@
 # AXIT
 
-## 0.7.0
+## 0.6.0
 
 *HTML, CSS*
 
@@ -11,23 +11,19 @@ Layout of a landing-page site according to a [Figma template](https://www.figma.
 
 ## Updates
 
-#### 0.7.0
+#### 0.6.0
 
 *17/12/2022*
 
 - created section "Reviews"
-
-#### 0.6.0
-
-*16/12/2022*
-
-- created section "Banner"
-- added `transition-duration` for buttons
+- created section "Banner 2"
 
 #### 0.5.0
 
 *16/12/2022*
 
+- created section "Banner"
+- added `transition-duration` for buttons
 - created section "Header"
 - added favicon
 

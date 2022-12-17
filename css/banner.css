@@ -16,10 +16,6 @@
     left: 0;
     background: rgba(0, 0, 0, 0.5);
 }
-.banner > .container {
-    position: relative;
-    z-index: 1;
-}
 .banner__description {
     width: calc(7 / 12 * 100%);
 }
