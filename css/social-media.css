@@ -17,19 +17,19 @@
 .social-media__icons {
     flex: 1;
 }
-.social-media__icons__list {
+.icons__list {
     margin: 35px 0 0;
     padding: 0 0 0 30px;    
     display: flex;
     justify-content: space-between;
     list-style-type: none;
 }
-.social-media__icons__link {
+.icons__link {
     display: block;
     width: 70px;
     line-height: 70px;
     text-align: center;
 }
-.social-media__icons__icon {
+.icons__icon {
     vertical-align: middle;
 }

@@ -17,6 +17,7 @@ Layout of a landing-page site according to a [Figma template](https://www.figma.
 
 - created section "Reviews"
 - created section "Banner 2"
+- created footer
 
 #### 0.5.0
 
@@ -24,7 +25,7 @@ Layout of a landing-page site according to a [Figma template](https://www.figma.
 
 - created section "Banner"
 - added `transition-duration` for buttons
-- created section "Header"
+- created header
 - added favicon
 
 ---
