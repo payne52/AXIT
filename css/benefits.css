@@ -6,6 +6,7 @@
 }
 .benefits__list-item {
     padding: 15px;
+    transition: 0.2s;
 }
 .benefits__icon-block {
     width: 90px;
@@ -15,12 +16,17 @@
     border-radius: 50%;    
     margin: 0 auto 74px auto;
     text-align: center;
+    transition: 0.2s;
+    transition-timing-function: ease-in-out;
 }
 .benefits__icon {
     vertical-align: middle;
-}
-.benefits__list-item:hover .benefits__icon {
-    transform: rotate(360deg);
     transition: 0.2s;
     transition-timing-function: ease-in-out;
+}
+.benefits__list-item:hover .benefits__icon-block {
+    transform: scale(1.25);
+}
+.benefits__list-item:hover .benefits__icon {
+    transform: scale(0.90);
 }

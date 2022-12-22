@@ -1,0 +1,19 @@
+.stylish {
+    background: linear-gradient(to bottom, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../images/stylish.webp);
+    background-position: center bottom;
+    position: relative;    
+    text-align: center;
+}
+.stylish__title,
+.stylish__description-text {
+    color: #fff;
+}
+.stylish__title::after {
+    border-color: #fff;
+}
+.stylish__description-text {
+    margin-bottom: 75px;
+}
+.stylish__button {
+    width: 370px;
+}

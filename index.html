@@ -18,7 +18,7 @@
         <link rel="stylesheet" href="./css/benefits.css">
         <link rel="stylesheet" href="./css/pricing.css">
         <link rel="stylesheet" href="./css/reviews.css">
-        <link rel="stylesheet" href="./css/banner-2.css">
+        <link rel="stylesheet" href="./css/stylish.css">
         <link rel="stylesheet" href="./css/footer.css">
     </head>
     <body>
@@ -74,37 +74,37 @@
                     <ul class="social-media__icons__list icons__list">
                         <li class="social-media__icons__list-item icons__list-item">
                             <a href="#" class="social-media__icons__link icons__link">
-                                <img src="./images/icons/facebook-icon.svg" alt="facebook-icon" class="social-media__icons__icon icons__icon">
+                                <img src="./images/icons/facebook-icon.svg" alt="facebook icon" class="social-media__icons__icon icons__icon">
                             </a>
                         </li>
                         <li class="social-media__icons__list-item icons__list-item">
                             <a href="#" class="social-media__icons__link icons__link">
-                                <img src="./images/icons/twitter-icon.svg" alt="twitter-icon" class="social-media__icons__icon icons__icon">
+                                <img src="./images/icons/twitter-icon.svg" alt="twitter icon" class="social-media__icons__icon icons__icon">
                             </a>
                         </li>
                         <li class="social-media__icons__list-item icons__list-item">
                             <a href="#" class="social-media__icons__link icons__link">
-                                <img src="./images/icons/linkedin-icon.svg" alt="linkedin-icon" class="social-media__icons__icon icons__icon">
+                                <img src="./images/icons/linkedin-icon.svg" alt="linkedin icon" class="social-media__icons__icon icons__icon">
                             </a>
                         </li>
                         <li class="social-media__icons__list-item icons__list-item">
                             <a href="#" class="social-media__icons__link icons__link">
-                                <img src="./images/icons/pinterest-icon.svg" alt="pinterest-icon" class="social-media__icons__icon icons__icon">
+                                <img src="./images/icons/pinterest-icon.svg" alt="pinterest icon" class="social-media__icons__icon icons__icon">
                             </a>
                         </li>
                         <li class="social-media__icons__list-item icons__list-item">
                             <a href="#" class="social-media__icons__link icons__link">
-                                <img src="./images/icons/instagram-icon.svg" alt="instagram-icon" class="social-media__icons__icon icons__icon">
+                                <img src="./images/icons/instagram-icon.svg" alt="instagram icon" class="social-media__icons__icon icons__icon">
                             </a>
                         </li>
                         <li class="social-media__icons__list-item icons__list-item">
                             <a href="#" class="social-media__icons__link icons__link">
-                                <img src="./images/icons/github-icon.svg" alt="github-icon" class="social-media__icons__icon icons__icon">
+                                <img src="./images/icons/github-icon.svg" alt="github icon" class="social-media__icons__icon icons__icon">
                             </a>
                         </li>
                         <li class="social-media__icons__list-item icons__list-item">
                             <a href="#" class="social-media__icons__link icons__link">
-                                <img src="./images/icons/rss-icon.svg" alt="rss-icon" class="social-media__icons__icon icons__icon">
+                                <img src="./images/icons/rss-icon.svg" alt="rss icon" class="social-media__icons__icon icons__icon">
                             </a>
                         </li>
                     </ul>
@@ -133,9 +133,10 @@
                         </p>
                         <button class="tabs__button button_filled">Download</button>
                     </div>
-                    <div class="tabs__image">
-                        <img src="./images/tab1.png" alt="">
-                    </div>
+                    <picture class="tabs__image">
+                        <source type="image/webp" srcset="./images/tab1.webp, ./images/tab1@2.webp 2x"></source>
+                        <img src="./images/tab1.png, ./images/tab1@2.png 2x" alt="" loading="lazy">
+                    </picture>                    
                 </div>
             </div>
         </section>
@@ -148,7 +149,7 @@
                 <ul class="benefits__list">
                     <li class="benefits__list-item">
                         <div class="benefits__icon-block">
-                            <img src="./images/icons/lamp-icon.svg" alt="lamp-icon" class="benefits__icon">
+                            <img src="./images/icons/lamp-icon.svg" alt="lamp icon" class="benefits__icon">
                         </div>    
                         <h4 class="benefits__list-item__title">Thoughtful Design</h4>
                         <p class="benefits__list-item__description-text">
@@ -158,7 +159,7 @@
                     </li>
                     <li class="benefits__list-item">
                         <div class="benefits__icon-block">
-                            <img src="./images/icons/keyboard-icon.svg" alt="keyboard-icon" class="benefits__icon">
+                            <img src="./images/icons/keyboard-icon.svg" alt="keyboard icon" class="benefits__icon">
                         </div>    
                         <h4 class="benefits__list-item__title">Thoughtful Design</h4>
                         <p class="benefits__list-item__description-text">
@@ -168,7 +169,7 @@
                     </li>
                     <li class="benefits__list-item">
                         <div class="benefits__icon-block">
-                            <img src="./images/icons/lightning-icon.svg" alt="lightning-icon" class="benefits__icon">
+                            <img src="./images/icons/lightning-icon.svg" alt="lightning icon" class="benefits__icon">
                         </div>    
                         <h4 class="benefits__list-item__title">Thoughtful Design</h4>
                         <p class="benefits__list-item__description-text">
@@ -263,7 +264,10 @@
                     </div>
                     <div class="reviews__author__information">
                         <div class="reviews__author__avatar">
-                            <img src="./images/authors/Davis-Rhiel-Madsen.png" alt="Davis-Rhiel-Madsen" class="reviews__author__avatar-img">
+                            <picture class="reviews__author__avatar-img">
+                                <source type="image/webp" srcset="./images/authors/Davis-Rhiel-Madsen.webp, ./images/authors/Davis-Rhiel-Madsen@2.webp 2x"></source>
+                                <img src="./images/authors/Davis-Rhiel-Madsen.png, ./images/authors/Davis-Rhiel-Madsen@2.png" alt="Davis Rhiel Madsen" loading="lazy">                                
+                            </picture>                            
                         </div>
                         <div class="reviews__author__data">
                             <h4 class="reviews__author__name">Davis Rhiel Madsen</h4>
@@ -281,7 +285,10 @@
                     </div>
                     <div class="reviews__author__information">
                         <div class="reviews__author__avatar">
-                            <img src="./images/authors/Jaydon-Rosser.png" alt="Davis-Rhiel-Madsen" class="reviews__author__avatar-img">
+                            <picture class="reviews__author__avatar-img">
+                                <source type="image/webp" srcset="./images/authors/Jaydon-Rosser.webp, ./images/authors/Jaydon-Rosser@2.webp 2x"></source>
+                                <img src="./images/authors/Jaydon-Rosser.png, ./images/authors/Jaydon-Rosser@2.png" alt="Jaydon Rosser" loading="lazy">                                
+                            </picture>                            
                         </div>
                         <div class="reviews__author__data">
                             <h4 class="reviews__author__name">Jaydon Rosser</h4>
@@ -296,7 +303,10 @@
                     </div>
                     <div class="reviews__author__information">
                         <div class="reviews__author__avatar">
-                            <img src="./images/authors/Cooper-Dorwart.png" alt="Davis-Rhiel-Madsen" class="reviews__author__avatar-img">
+                            <picture class="reviews__author__avatar-img">
+                                <source type="image/webp" srcset="./images/authors/Cooper-Dorwart.webp, ./images/authors/Cooper-Dorwart@2.webp 2x"></source>
+                                <img src="./images/authors/Cooper-Dorwart.png, ./images/authors/Cooper-Dorwart@2.png" alt="Cooper Dorwart" loading="lazy">                                
+                            </picture>                            
                         </div>
                         <div class="reviews__author__data">
                             <h4 class="reviews__author__name">Cooper Dorwart
@@ -307,13 +317,13 @@
                 </div>
             </div>
         </section>
-        <section class="banner-2">
+        <section class="stylish">
             <div class="container">
-                <h2 class="banner-2__title section__title">Stylish axure design</h2>
-                <p class="banner-2__description-text section__description-text">
+                <h2 class="stylish__title section__title">Stylish axure design</h2>
+                <p class="stylish__description-text section__description-text">
                     Use the sections you need, remove the ones you don't.  Create gorgeous prototypes faster than ever!
                 </p>
-                <button class="banner-2__button button_outline">Download</button>
+                <button class="stylish__button button_outline">Download</button>
             </div>            
         </section>
         <footer class="footer">
@@ -322,37 +332,37 @@
                     <ul class="footer__icons__list icons__list">
                         <li class="footer__icons__list-item icons__list-item">
                             <a href="#" class="footer__icons__link icons__link">
-                                <img src="./images/icons/facebook-icon.svg" alt="facebook-icon" class="footer__icons__icon icons__icon">
+                                <img src="./images/icons/facebook-icon.svg" alt="facebook icon" class="footer__icons__icon icons__icon">
                             </a>
                         </li>
                         <li class="footer__icons__list-item icons__list-item">
                             <a href="#" class="footer__icons__link icons__link">
-                                <img src="./images/icons/twitter-icon.svg" alt="twitter-icon" class="footer__icons__icon icons__icon">
+                                <img src="./images/icons/twitter-icon.svg" alt="twitter icon" class="footer__icons__icon icons__icon">
                             </a>
                         </li>
                         <li class="footer__icons__list-item icons__list-item">
                             <a href="#" class="footer__icons__link icons__link">
-                                <img src="./images/icons/linkedin-icon.svg" alt="linkedin-icon" class="footer__icons__icon icons__icon">
+                                <img src="./images/icons/linkedin-icon.svg" alt="linkedin icon" class="footer__icons__icon icons__icon">
                             </a>
                         </li>
                         <li class="footer__icons__list-item icons__list-item">
                             <a href="#" class="footer__icons__link icons__link">
-                                <img src="./images/icons/pinterest-icon.svg" alt="pinterest-icon" class="footer__icons__icon icons__icon">
+                                <img src="./images/icons/pinterest-icon.svg" alt="pinterest icon" class="footer__icons__icon icons__icon">
                             </a>
                         </li>
                         <li class="footer__icons__list-item icons__list-item">
                             <a href="#" class="footer__icons__link icons__link">
-                                <img src="./images/icons/instagram-icon.svg" alt="instagram-icon" class="footer__icons__icon icons__icon">
+                                <img src="./images/icons/instagram-icon.svg" alt="instagram icon" class="footer__icons__icon icons__icon">
                             </a>
                         </li>
                         <li class="footer__icons__list-item icons__list-item">
                             <a href="#" class="footer__icons__link icons__link">
-                                <img src="./images/icons/github-icon.svg" alt="github-icon" class="footer__icons__icon icons__icon">
+                                <img src="./images/icons/github-icon.svg" alt="github icon" class="footer__icons__icon icons__icon">
                             </a>
                         </li>
                         <li class="footer__icons__list-item icons__list-item">
                             <a href="#" class="footer__icons__link icons__link">
-                                <img src="./images/icons/rss-icon.svg" alt="rss-icon" class="footer__icons__icon icons__icon">
+                                <img src="./images/icons/rss-icon.svg" alt="rss icon" class="footer__icons__icon icons__icon">
                             </a>
                         </li>
                     </ul>
