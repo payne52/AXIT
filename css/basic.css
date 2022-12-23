@@ -51,36 +51,42 @@ section {
     display: block;
     margin: auto;
     width: 170px;
-    border-bottom: 1px solid #EC7979;
+    border-bottom: 1px solid var(--primary-color);
 }
 .section__description-text {
     color: #86878B;
     text-align: center;
     margin: 40px 0 95px;
 }
-button {
+button,
+.input_submit {
     cursor: pointer;
     padding: 0;
     line-height: 60px;
-    min-width: 270px;
+    width: 100%;
+    max-width: 270px;
     font-family: 'Open Sans', sans-serif;
     font-weight: 600;
     font-size: 1em;
     color: #fff;
     transition-duration: .1s;
 }
-.button_filled {
-    background-color: #EC7979;
+.button_filled,
+.input_submit {
+    background-color: var(--primary-color);
     border: 0;
     outline: none;
 }
 .button_filled:hover,
-.button_filled:focus-visible {
-    background-color: #AB4949;
+.button_filled:focus-visible,
+.input_submit:hover,
+.input_submit:focus-visible {
+    background-color: var(--secondary-color);
 }
-.button_filled:active {
-    background-color: #EC7979;
-    box-shadow: 0 0 10px #AB4949 inset;
+.button_filled:active,
+.input_submit:active {
+    background-color: var(--primary-color);
+    box-shadow: 0 0 10px var(--secondary-color) inset;
 }
 .button_outline {
     border: 2px solid #fff;
@@ -88,11 +94,33 @@ button {
 }
 .button_outline:hover,
 .button_outline:focus-visible {
-    color: #EC7979;
-    border-color: #EC7979;
+    color: var(--primary-color);
+    border-color: var(--primary-color);
 }
 .button_outline:active {
     color: #fff;
-    border-color: #AB4949;
-    background-color: #AB4949;
+    border-color: var(--secondary-color);
+    background-color: var(--secondary-color);
+}
+.banner__form__item,
+.banner__form__item .input_text {
+    display: inline-block;
+    width: 100%;
+}
+.banner__form__item {
+    margin-bottom: 20px;
+}
+.input_text {
+    padding: 0;
+    line-height: 50px;
+    border: 0;    
+    outline: none;    
+}
+.input_text,
+textarea {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.77em;    
+}
+.input_text::placeholder {
+    color: #BDBDBD;
 }

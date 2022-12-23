@@ -12,7 +12,7 @@
     width: 90px;
     height: 90px;
     line-height: 90px;
-    border: 1px solid #EC7979;
+    border: 1px solid var(--primary-color);
     border-radius: 50%;    
     margin: 0 auto 74px auto;
     text-align: center;

@@ -43,7 +43,8 @@
     margin: 0 0 20px;
 }
 .tabs__button {
-    width: 270px;
+    width: 100%;
+    max-width: 270px;
 }
 .tabs__image {    
     flex: 5;

@@ -25,8 +25,13 @@
     text-decoration: none;
     transition-duration: .1s;
 }
-.header__menu-link:hover {
-    color: #EC7979;
+.header__menu-link:hover,
+.header__menu-link:focus-visible {
+    background: var(--primary-color);
+    outline: none;
+}
+.header__menu-link:active {
+    background: var(--secondary-color);    
 }
 .header__logo-block {
     flex: 1;

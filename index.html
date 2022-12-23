@@ -9,6 +9,7 @@
         <link rel="icon" href="./images/favicon.svg" type="image/svg+xml">
 
         <link rel="stylesheet" href="./css/fonts.css">
+        <link rel="stylesheet" href="./css/variable.css">
         <link rel="stylesheet" href="./css/basic.css">
 
         <link rel="stylesheet" href="./css/header.css">
@@ -19,6 +20,7 @@
         <link rel="stylesheet" href="./css/pricing.css">
         <link rel="stylesheet" href="./css/reviews.css">
         <link rel="stylesheet" href="./css/stylish.css">
+        <link rel="stylesheet" href="./css/contact-us.css">
         <link rel="stylesheet" href="./css/footer.css">
     </head>
     <body>
@@ -59,6 +61,21 @@
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit
                     </p>
                     <button class="banner__button button_outline">Download</button>
+                </div>
+                <div class="banner__form-bg">
+                    <form action="#" method="post" class="banner__form">
+                        <h4 class="banner__form__title">Try Your <span class="banner__form__title_free">FREE</span> Trial Today</h4>
+                        <label class="banner__form__item">
+                            <input type="text" name="name" placeholder="Name" required class="banner__form__name input_text">
+                        </label>
+                        <label class="banner__form__item">
+                            <input type="email" name="email" placeholder="Email" required class="banner__form__email input_text">
+                        </label>
+                        <label class="banner__form__item">
+                            <input type="password" name="password" placeholder="Password" required class="banner__form__email input_text">
+                        </label>
+                        <input type="submit" name="submit" value="Get Sarted" class="banner__form__submit input_submit">
+                    </form>
                 </div>
             </div>
         </section>
@@ -325,6 +342,35 @@
                 </p>
                 <button class="stylish__button button_outline">Download</button>
             </div>            
+        </section>
+        <section class="contact-us">
+            <div class="container">
+                <h2 class="contact-us__title section__title">Contact us</h2>
+                <p class="contact-us__description-text section__description-text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </p>
+                <form action="#" method="post" class="contact-us__form">
+                    <div class="contact-us__form__required">
+                        <div class="contact-us__form__item">
+                            <label for="name" class="contact-us__form__label">Name</label>
+                            <input type="text" name="name" required id="name" class="banner__form__name input_text">
+                        </div>
+                        <div class="contact-us__form__item">
+                            <label for="email" class="contact-us__form__label">Email</label>
+                            <input type="email" name="email" required id="email" class="banner__form__email input_text">
+                        </div>
+                        <div class="contact-us__form__item">
+                            <label for="password" class="contact-us__form__label">Password</label>
+                            <input type="password" name="password" required id="password" class="banner__form__password input_text">
+                        </div>
+                    </div>
+                    <div class="contact-us__form__message">
+                        <label for="message" class="contact-us__form__label">Message</label>
+                        <textarea name="message" id="message" class="contact-us__form__textarea"></textarea>
+                    </div>
+                    <input type="submit" name="submit" value="Send Message" class="contact-us__form__submit input_submit">
+                </form>
+            </div>
         </section>
         <footer class="footer">
             <div class="container">

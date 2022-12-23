@@ -15,5 +15,5 @@
     margin-bottom: 75px;
 }
 .stylish__button {
-    width: 370px;
+    max-width: 370px;
 }
