@@ -14,7 +14,7 @@
 .contact-us__form__label {
     line-height: 50px;
     font-size: 0.77em;
-    color: #BDBDBD;
+    color: var(--form-color);
 }
 .contact-us__form__item .input_text {
     flex: 1;
@@ -36,7 +36,7 @@
 }
 .contact-us__form__item,
 .contact-us__form__textarea {
-    border-bottom: 1px solid #BDBDBD;
+    border-bottom: 1px solid var(--form-color);
 }
 .contact-us__form__submit {
     max-width: 370px;

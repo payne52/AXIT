@@ -1,15 +1,15 @@
 .stylish {
-    background: linear-gradient(to bottom, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../images/stylish.webp);
+    background: linear-gradient(to bottom, var(--half-opacity-black), var(--half-opacity-black)), url(../images/stylish.webp);
     background-position: center bottom;
     position: relative;    
     text-align: center;
 }
 .stylish__title,
 .stylish__description-text {
-    color: #fff;
+    color: var(--secondary-text);
 }
 .stylish__title::after {
-    border-color: #fff;
+    border-color: var(--primary-background);
 }
 .stylish__description-text {
     margin-bottom: 75px;

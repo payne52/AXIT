@@ -1,5 +1,5 @@
 .social-media {
-    background-color: #F8EFEF;
+    background-color: var(--social-media-backgound);
     padding: 0;
 }
 .social-media > .container {
@@ -12,7 +12,7 @@
     margin: 20px 0 38px;
 }
 .social-media__text {
-    color: #86878B;
+    color: var(--gray-text);
 }
 .social-media__icons {
     flex: 1;

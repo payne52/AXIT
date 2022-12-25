@@ -1,10 +1,10 @@
 .pricing {
-    background-color: #F5F5F5;
+    background-color: var(--primary-gray);
 }
 .pricing__options {
     display: flex;    
     align-items: flex-start;
-    margin: -15px -15px 0;
+    margin: 0 -15px 0;
 }
 .pricing__option {
     flex-grow: 1;
@@ -18,9 +18,9 @@
 .pricing__option__title,
 .pricing__option__price,
 .pricing__option__description-text {
-    color: #fff;
-    background-color: #333;
-    border: 1px solid #F5F5F5;
+    color: var(--secondary-text);
+    background-color: var(--dark-color);
+    border: 1px solid var(--primary-gray);
     margin: 0;
 }
 .pricing__option__title {
@@ -44,8 +44,8 @@
     margin: 0;
 }
 .pricing__option__item {
-    background-color: #fff;
-    color: #86878B;
+    background-color: var(--primary-background);
+    color: var(--gray-text);
     line-height: 50px;
-    border: 1px solid #F5F5F5;
+    border: 1px solid var(--primary-gray);
 }

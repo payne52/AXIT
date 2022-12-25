@@ -1,5 +1,5 @@
 .header {
-    background-color: #000;
+    background-color: var(--secondary-background);
     position: sticky;
     z-index: 3;
     top: 0;
@@ -17,11 +17,11 @@
 .header__menu-link {
     display: block;
     padding: 0 30px;
-    line-height: 75px;
+    line-height: 76px;
     font-family: 'Open Sans', sans-serif;
     font-weight: 600;
     font-size: 0.77em;
-    color: #fff;
+    color: var(--secondary-text);
     text-decoration: none;
     transition-duration: .1s;
 }

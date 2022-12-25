@@ -1,5 +1,5 @@
 .footer {
-    background-color: #000;
+    background-color: var(--secondary-background);
     padding: 35px 25px;
 }
 .footer__icons__list {
@@ -16,7 +16,7 @@
     transform: scale(0.75);
 }
 .footer__copyright {
-    color: #fff;
+    color: var(--secondary-text);
     opacity: 0.5;
     text-align: center;
     margin-top: 15px;
