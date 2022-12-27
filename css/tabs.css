@@ -29,11 +29,12 @@
 .tabs__tab {
     border: 1px solid var(--tabs-border);  
     display: flex;
+    column-gap: 30px;
     position: relative;
     z-index: 1;
 }
 .tabs__description {
-    padding: 40px 30px 55px 100px;    
+    padding: 40px 0 55px 100px;    
     flex: 7;
 }
 .tabs__title {

@@ -1,6 +1,6 @@
 # AXIT
 
-## 0.7.0
+## 0.7
 
 *HTML, CSS*
 
@@ -11,7 +11,7 @@ Layout of a landing-page site according to a [Figma template](https://www.figma.
 
 ## Updates
 
-#### 0.7.0
+#### 0.7
 
 *23/12/2022*
 
@@ -19,7 +19,7 @@ Layout of a landing-page site according to a [Figma template](https://www.figma.
 - added forms
 - changed hover effect for navigation
 
-#### 0.6.0
+#### 0.6
 
 *17/12/2022*
 
@@ -27,7 +27,7 @@ Layout of a landing-page site according to a [Figma template](https://www.figma.
 - created section "Stylish"
 - created footer
 
-#### 0.5.0
+#### 0.5
 
 *16/12/2022*
 

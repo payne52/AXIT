@@ -1,23 +1,17 @@
 .footer {
     background-color: var(--secondary-background);
-    padding: 35px 25px;
+    padding: 30px 0px;
 }
 .footer__icons__list {
     margin: 0;
     padding: 0;
     justify-content: center;
-    gap: 30px;
-}
-.footer__icons__link {
-    width: 55px;
-    line-height: 55px;
-}
-.footer__icons__icon {
     transform: scale(0.75);
+    gap: 30px;
 }
 .footer__copyright {
     color: var(--secondary-text);
     opacity: 0.5;
     text-align: center;
-    margin-top: 15px;
+    margin-top: 30px;
 }

@@ -33,10 +33,11 @@
 }
 .reviews__author__information {
     display: flex;
+    column-gap: 30px;
 }
 .reviews__author__name {
-    margin: 20px 0 35px 30px;
+    margin: 15px 0 35px;
 }
 .reviews__author__post {
-    margin: 0 0 15px 30px;
+    margin: 0 0 15px;
 }

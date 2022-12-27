@@ -1,0 +1,155 @@
+@media (max-width: 1330px) {
+    .header__logo-link {
+        margin-left: 0;
+    }
+}
+@media (max-width: 1230px) {
+    body {
+        font-size: 14px;
+    }
+    .container {
+        max-width: 992px;        
+    }
+    .header__menu-link,
+    .input_text, 
+    textarea,
+    .tabs__selector,
+    .contact-us__form__label {
+        font-size: 1em;
+    }
+    .banner > .container,
+    .social-media > .container,
+    .tabs__tab,
+    .benefits__list,
+    .pricing__options,
+    .reviews__author__information,
+    .contact-us__form,
+    .footer__icons__list {
+        column-gap: 20px;
+    }
+    .banner__logo-img {
+        width: 115px;
+    }
+    h1,
+    .pricing__option__price {
+        font-size: 2.57em;
+    }
+    .banner__title {
+        margin-bottom: 30px;        
+    }
+    .banner__text {
+        max-width: 50%;
+    }
+    button, 
+    .input_submit,
+    .pricing__option__description-text,
+    .pricing__option__item,
+    .footer__copyright {
+        font-size: 1.28em;
+    }
+    .banner__button {
+        margin-top: 12px;
+        max-width: 180px;
+        line-height: 50px;
+    }
+    .banner__form__submit {
+        font-size: 1.07em;
+    }
+    .social-media__title {
+        margin: 15px 0 25px;
+    }
+    .social-media__icons__list {
+        margin-top: 25px;
+    }
+    .icons__link {
+        width: 64px;
+        line-height: 64px;
+    }
+    .icons__icon {
+        transform: scale(0.9);
+    }
+    .tabs {
+        padding-top: 50px;
+    }
+    .tabs__selector {
+        width: 170px;
+    }
+    .tabs__description {
+        padding: 30px 0 50px 80px;
+    }
+    .tabs__button {
+        margin-top: 20px;
+        max-width: 230px;
+    }
+    h2,
+    .pricing__option__title {
+        font-size: 1.71em;
+    }
+    .section__title {
+        line-height: 120px;
+        margin-bottom: 30px;
+    }
+    .section__description-text {
+        margin-bottom: 30px;
+    }
+    .benefits__icon-block {
+        width: 80px;
+        height: 80px;
+        line-height: 80px;
+        margin-bottom: 65px;
+    }
+    .benefits__icon {
+        transform: scale(0.85);
+    }
+    h4 {
+        margin-bottom: 30px;
+    }
+    .pricing__options {
+        margin-top: 50px;
+    }
+    .pricing__option__title {
+        line-height: 50px;
+    }
+    .pricing__option__price {
+        line-height: 90px;
+    }
+    .pricing__option__description-text,
+    .pricing__option__item {
+        line-height: 45px;
+    }
+    .reviews__author__message {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .reviews__author__avatar-img {
+        width: 65px;        
+    }
+    .reviews__author__name {
+        margin: 10px 0 15px;
+    }
+    .reviews__author__post {
+        margin-bottom: 10px;
+    }
+    .stylish__description-text {
+        margin: 30px 0;
+    }
+    .stylish__button {
+        max-width: 320px;
+    }
+    .contact-us__description-text {
+        margin-bottom: 60px;
+    }
+    .contact-us__form__required, 
+    .contact-us__form__message {
+        width: calc(50% - 10px);
+    }
+    /*
+    .footer__icons__link {
+        width: 45px;
+        line-height: 45px;
+    }
+    .footer__icons__icon {
+        transform: scale(0.65);
+    }
+    */
+}

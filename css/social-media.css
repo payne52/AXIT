@@ -4,9 +4,10 @@
 }
 .social-media > .container {
     display: flex;
+    column-gap: 30px;
 }
 .social-media__description {
-    width: 40%;
+    flex: 5;
 }
 .social-media__title {
     margin: 20px 0 38px;
@@ -15,11 +16,11 @@
     color: var(--gray-text);
 }
 .social-media__icons {
-    flex: 1;
+    flex: 7;
 }
 .icons__list {
     margin: 35px 0 0;
-    padding: 0 0 0 30px;    
+    padding: 0px;    
     display: flex;
     justify-content: space-between;
     list-style-type: none;

@@ -11,6 +11,7 @@
 }
 .banner > .container {
     display: flex;
+    column-gap: 30px;
 }
 .banner__description {
     flex: 7;
