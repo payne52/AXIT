@@ -33,8 +33,7 @@ h5 {
 section {
     padding: 50px 0;
 }
-.container {
-    width: 100%;
+.container {    
     max-width: 1170px;
     margin: 0 auto;
     position: relative;

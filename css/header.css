@@ -51,3 +51,50 @@
 .header__logo-link:hover .header__logo-img {
     transform: translateX(10px);
 }
+.menu-toggle-checkbox {
+    display: none;
+}
+.header__menu-toggle {
+    display: none;
+    width: 55px;
+    height: 55px;
+    position: relative;
+}
+.header__menu-toggle__line,
+.header__menu-toggle__line::before,
+.header__menu-toggle__line::after {
+    display: inline-block;
+    width: 24px;
+    height: 3px;
+    background-color: var(--primary-background);
+    position: absolute;
+    top: calc(50% - 1.5px);
+    left: calc(50% - 12px);
+    transition: 0.2s;
+}
+.header__menu-toggle__line::before,
+.header__menu-toggle__line::after {
+    content: '';
+}
+.header__menu-toggle__line::before {
+    margin-top: -7px;
+}
+.header__menu-toggle__line::after {
+    margin-top: 7px;
+}
+.menu-toggle-checkbox:checked ~ .header__menu-block {
+    height: 100vh;
+}
+.menu-toggle-checkbox:checked ~ .header__menu-toggle .header__menu-toggle__line {
+    background: none;
+}
+.menu-toggle-checkbox:checked ~ .header__menu-toggle .header__menu-toggle__line::before,
+.menu-toggle-checkbox:checked ~ .header__menu-toggle .header__menu-toggle__line::after {
+    margin: 0;
+}
+.menu-toggle-checkbox:checked ~ .header__menu-toggle .header__menu-toggle__line::before {
+    transform: rotate(-45deg);
+}
+.menu-toggle-checkbox:checked ~ .header__menu-toggle .header__menu-toggle__line::after {
+    transform: rotate(45deg);
+}
