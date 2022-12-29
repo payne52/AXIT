@@ -33,8 +33,8 @@
                         <img src="./images/logo.svg" alt="logo" class="header__logo-img">
                     </a>                    
                 </div>
-                <input type="checkbox" id="menu_toggle_checkbox" class="menu-toggle-checkbox">
-                <label for="menu_toggle_checkbox" class="header__menu-toggle">
+                <input type="checkbox" id="header__checkbox" class="header__checkbox">
+                <label for="header__checkbox" class="header__menu-toggle">
                     <span class="header__menu-toggle__line"></span>
                 </label>                
                 <nav class="header__menu-block">
@@ -276,67 +276,83 @@
                 <p class="pricing__description-text section__description-text">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 </p>
-                <div class="reviews__authors">                    
-                    <div class="reviews__author__message">
-                        <p class="reviews__author__message-text">
-                            Lorem ipsum dolor sit amet, 
-                            consectetur adipisicing elit. Doloribus 
-                            accusamus expedita repellat similique 
-                            odio aspernatur ex.
-                        </p>
-                    </div>
-                    <div class="reviews__author__information">
-                        <div class="reviews__author__avatar">
-                            <picture class="reviews__author__avatar-picture">
-                                <source type="image/webp" srcset="./images/authors/Davis-Rhiel-Madsen.webp, ./images/authors/Davis-Rhiel-Madsen@2.webp 2x"></source>
-                                <img src="./images/authors/Davis-Rhiel-Madsen.png, ./images/authors/Davis-Rhiel-Madsen@2.png" alt="Davis Rhiel Madsen" loading="lazy" class="reviews__author__avatar-img">
-                            </picture>                            
+                <div class="reviews__authors"> 
+                    <div class="reviews__author reviews__author_active">
+                        <div class="reviews__author__message">
+                            <p class="reviews__author__message-text">
+                                Lorem ipsum dolor sit amet, 
+                                consectetur adipisicing elit. Doloribus 
+                                accusamus expedita repellat similique 
+                                odio aspernatur ex.
+                            </p>
                         </div>
-                        <div class="reviews__author__data">
-                            <h4 class="reviews__author__name">Davis Rhiel Madsen</h4>
-                            <h5 class="reviews__author__post">Manager</h5>
-                        </div>                            
-                    </div>                        
-                    <div class="reviews__author__message">
-                        <p class="reviews__author__message-text">
-                            Lorem ipsum dolor sit amet, 
-                            consectetur adipisicing elit. Doloribus 
-                            accusamus expedita repellat similique 
-                            odio aspernatur ex, architecto eaque 
-                            quo suscipit.
-                        </p>
-                    </div>
-                    <div class="reviews__author__information">
-                        <div class="reviews__author__avatar">
-                            <picture class="reviews__author__avatar-picture">
-                                <source type="image/webp" srcset="./images/authors/Jaydon-Rosser.webp, ./images/authors/Jaydon-Rosser@2.webp 2x"></source>
-                                <img src="./images/authors/Jaydon-Rosser.png, ./images/authors/Jaydon-Rosser@2.png" alt="Jaydon Rosser" loading="lazy" class="reviews__author__avatar-img">
-                            </picture>                            
+                        <div class="reviews__author__information">
+                            <div class="reviews__author__avatar">
+                                <picture class="reviews__author__avatar-picture">
+                                    <source type="image/webp" srcset="./images/authors/Davis-Rhiel-Madsen.webp, ./images/authors/Davis-Rhiel-Madsen@2.webp 2x"></source>
+                                    <img src="./images/authors/Davis-Rhiel-Madsen.png, ./images/authors/Davis-Rhiel-Madsen@2.png" alt="Davis Rhiel Madsen" loading="lazy" class="reviews__author__avatar-img">
+                                </picture>                            
+                            </div>
+                            <div class="reviews__author__data">
+                                <h4 class="reviews__author__name">Davis Rhiel Madsen</h4>
+                                <h5 class="reviews__author__post">Manager</h5>
+                            </div>                            
                         </div>
-                        <div class="reviews__author__data">
-                            <h4 class="reviews__author__name">Jaydon Rosser</h4>
-                            <h5 class="reviews__author__post">Manager</h5>
-                        </div>                            
-                    </div>                                        
-                    <div class="reviews__author__message">
-                        <p class="reviews__author__message-text">
-                            Lorem ipsum dolor sit amet, 
-                            consectetur adipisicing elit. 
-                        </p>
-                    </div>
-                    <div class="reviews__author__information">
-                        <div class="reviews__author__avatar">
-                            <picture class="reviews__author__avatar-picture">
-                                <source type="image/webp" srcset="./images/authors/Cooper-Dorwart.webp, ./images/authors/Cooper-Dorwart@2.webp 2x"></source>
-                                <img src="./images/authors/Cooper-Dorwart.png, ./images/authors/Cooper-Dorwart@2.png" alt="Cooper Dorwart" loading="lazy" class="reviews__author__avatar-img">
-                            </picture>                            
+                    </div>                   
+                    <div class="reviews__author">
+                        <div class="reviews__author__message">
+                            <p class="reviews__author__message-text">
+                                Lorem ipsum dolor sit amet, 
+                                consectetur adipisicing elit. Doloribus 
+                                accusamus expedita repellat similique 
+                                odio aspernatur ex, architecto eaque 
+                                quo suscipit.
+                            </p>
                         </div>
-                        <div class="reviews__author__data">
-                            <h4 class="reviews__author__name">Cooper Dorwart
-                            </h4>
-                            <h5 class="reviews__author__post">Manager</h5>
-                        </div>                            
-                    </div>                                                                
+                        <div class="reviews__author__information">
+                            <div class="reviews__author__avatar">
+                                <picture class="reviews__author__avatar-picture">
+                                    <source type="image/webp" srcset="./images/authors/Jaydon-Rosser.webp, ./images/authors/Jaydon-Rosser@2.webp 2x"></source>
+                                    <img src="./images/authors/Jaydon-Rosser.png, ./images/authors/Jaydon-Rosser@2.png" alt="Jaydon Rosser" loading="lazy" class="reviews__author__avatar-img">
+                                </picture>                            
+                            </div>
+                            <div class="reviews__author__data">
+                                <h4 class="reviews__author__name">Jaydon Rosser</h4>
+                                <h5 class="reviews__author__post">Manager</h5>
+                            </div>                            
+                        </div>
+                    </div>
+                    <div class="reviews__author">
+                        <div class="reviews__author__message">
+                            <p class="reviews__author__message-text">
+                                Lorem ipsum dolor sit amet, 
+                                consectetur adipisicing elit. 
+                            </p>
+                        </div>
+                        <div class="reviews__author__information">
+                            <div class="reviews__author__avatar">
+                                <picture class="reviews__author__avatar-picture">
+                                    <source type="image/webp" srcset="./images/authors/Cooper-Dorwart.webp, ./images/authors/Cooper-Dorwart@2.webp 2x"></source>
+                                    <img src="./images/authors/Cooper-Dorwart.png, ./images/authors/Cooper-Dorwart@2.png" alt="Cooper Dorwart" loading="lazy" class="reviews__author__avatar-img">
+                                </picture>                            
+                            </div>
+                            <div class="reviews__author__data">
+                                <h4 class="reviews__author__name">Cooper Dorwart
+                                </h4>
+                                <h5 class="reviews__author__post">Manager</h5>
+                            </div>                            
+                        </div>       
+                    </div>                                                                              
+                </div>
+                <div class="reviews__dots">
+                    <input type="radio" id="reviews__dots__radio_1" class="reviews__dots__radio" name="tab" value="tab_1">
+                    <label for="reviews__dots__radio_1" class="reviews__dots__label"></label>
+
+                    <input type="radio" id="reviews__dots__radio_2" class="reviews__dots__radio" name="tab" value="tab_2" checked>
+                    <label for="reviews__dots__radio_2" class="reviews__dots__label"></label>
+
+                    <input type="radio" id="reviews__dots__radio_3" class="reviews__dots__radio" name="tab" value="tab_3">
+                    <label for="reviews__dots__radio_3" class="reviews__dots__label"></label>
                 </div>
             </div>
         </section>

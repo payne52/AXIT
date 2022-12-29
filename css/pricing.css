@@ -7,7 +7,7 @@
     column-gap: 30px;
 }
 .pricing__option {
-    flex-grow: 1;
+    flex: 1;
     text-align: center;   
 }
 .pricing__option:nth-child(2) {
