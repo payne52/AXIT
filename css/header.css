@@ -87,19 +87,24 @@
 .header__menu-toggle__line::after {
     margin-top: 8px;
 }
-.header__checkbox:checked ~ .header__menu-block {
-    height: 100vh;
+.header__checkbox:checked ~ .header .header__menu-block {
+    height: calc(100vh - 55px);
 }
-.header__checkbox:checked ~ .header__menu-toggle .header__menu-toggle__line {
+.header__checkbox:checked ~ section,
+.header__checkbox:checked ~ footer {
+    display: none;
+    transition-delay: .4s;
+}
+.header__checkbox:checked ~ .header .header__menu-toggle .header__menu-toggle__line {
     background: none;
 }
-.header__checkbox:checked ~ .header__menu-toggle .header__menu-toggle__line::before,
-.header__checkbox:checked ~ .header__menu-toggle .header__menu-toggle__line::after {
+.header__checkbox:checked ~ .header .header__menu-toggle .header__menu-toggle__line::before,
+.header__checkbox:checked ~ .header .header__menu-toggle .header__menu-toggle__line::after {
     margin: 0;
 }
-.header__checkbox:checked ~ .header__menu-toggle .header__menu-toggle__line::before {
+.header__checkbox:checked ~ .header .header__menu-toggle .header__menu-toggle__line::before {
     transform: rotate(-45deg);
 }
-.header__checkbox:checked ~ .header__menu-toggle .header__menu-toggle__line::after {
+.header__checkbox:checked ~ .header .header__menu-toggle .header__menu-toggle__line::after {
     transform: rotate(45deg);
 }

@@ -1,6 +1,6 @@
 # AXIT
 
-## 0.8
+## 0.9
 *HTML, CSS*
 
 Layout of a landing-page site according to a [Figma template](https://www.figma.com/file/NMy77nb3wtYugDrIF2rkun/TMS_front-(Copy)?node-id=617%3A1270&t=8BQpehdiECxBsDa7-1).
@@ -9,6 +9,14 @@ Layout of a landing-page site according to a [Figma template](https://www.figma.
 ---
 
 ## Updates
+
+#### 0.9
+
+*7/1/2022*
+
+- made tabs
+- made reviews for mobile version
+- made "no-scroll" when navigation is active
 
 #### 0.8
 

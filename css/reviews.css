@@ -1,3 +1,7 @@
+.reviews__content {
+    display: flex;
+    flex-direction: column-reverse;
+}
 .reviews__authors {
     display: flex;
     column-gap: 30px;
@@ -58,6 +62,8 @@
 .reviews__dots__radio {
     display: none;
 }
-.reviews__dots__radio:checked + .reviews__dots__label {
+#reviews__dots__radio_1:checked ~ .reviews__dots .reviews__dots__label[for="reviews__dots__radio_1"],
+#reviews__dots__radio_2:checked ~ .reviews__dots .reviews__dots__label[for="reviews__dots__radio_2"],
+#reviews__dots__radio_3:checked ~ .reviews__dots .reviews__dots__label[for="reviews__dots__radio_3"] {
     background-color: var(--gray-text);
 }

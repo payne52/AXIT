@@ -26,14 +26,14 @@
         <link rel="stylesheet" href="./css/adaptive.css">
     </head>
     <body>
+        <input type="checkbox" id="header__checkbox" class="header__checkbox">
         <header class="header">
             <div class="container">
                 <div class="header__logo-block">
                     <a href="#" class="header__logo-link">
                         <img src="./images/logo.svg" alt="logo" class="header__logo-img">
                     </a>                    
-                </div>
-                <input type="checkbox" id="header__checkbox" class="header__checkbox">
+                </div>                
                 <label for="header__checkbox" class="header__menu-toggle">
                     <span class="header__menu-toggle__line"></span>
                 </label>                
@@ -135,34 +135,73 @@
             </div>
         </section>
         <section class="tabs">
-            <div class="container">
-                <ul class="tabs__selectors">
-                    <li class="tabs__selector tabs__selector_active">Tab 1</li>
-                    <li class="tabs__selector">Tab 2</li>
-                    <li class="tabs__selector">Tab 3</li>
-                </ul>
-                <div class="tabs__tab">
-                    <div class="tabs__description">
-                        <div class="tabs__description-block">
-                            <h3 class="tabs__title">Tabs with soft transitioning effect.</h3>
-                            <p class="tabs__text">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod 
-                                bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra 
-                                justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque 
-                                penatibus et magnis dis parturient montes.
-                            </p>
-                            <p class="tabs__text">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod 
-                                bibendum laoreet.
-                            </p>
-                            <button class="tabs__button button_filled">Download</button>
-                        </div>
-                    </div>
-                    <picture class="tabs__image">
-                        <source type="image/webp" srcset="./images/tab1.webp, ./images/tab1@2.webp 2x"></source>
-                        <img src="./images/tab1.png, ./images/tab1@2.png 2x" alt="" loading="lazy">
-                    </picture>                    
+            <div class="container">                
+                <input type="radio" name="tab" id="tab1" class="tabs__radio" checked>
+                <input type="radio" name="tab" id="tab2" class="tabs__radio">
+                <input type="radio" name="tab" id="tab3" class="tabs__radio">
+                <div class="tabs__selectors">
+                    <label class="tabs__selector" for="tab1">Tab 1</label>
+                    <label class="tabs__selector" for="tab2">Tab 2</label>
+                    <label class="tabs__selector" for="tab3">Tab 3</label>
                 </div>
+                <div class="tabs__content">
+                    <div class="tabs__tab tabs__tab-1">
+                        <div class="tabs__description">
+                            <div class="tabs__description-block">
+                                <h3 class="tabs__title">Tabs with soft transitioning effect.</h3>
+                                <p class="tabs__text">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod 
+                                    bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra 
+                                    justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque 
+                                    penatibus et magnis dis parturient montes.
+                                </p>
+                                <p class="tabs__text">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod 
+                                    bibendum laoreet.
+                                </p>
+                                <button class="tabs__button button_filled">Download</button>
+                            </div>
+                        </div>
+                        <picture class="tabs__image">
+                            <source type="image/webp" srcset="./images/tab1.webp, ./images/tab1@2.webp 2x"></source>
+                            <img src="./images/tab1.png, ./images/tab1@2.png 2x" alt="" loading="lazy">
+                        </picture>                    
+                    </div>
+                    <div class="tabs__tab tabs__tab-2">
+                        <div class="tabs__description">
+                            <div class="tabs__description-block">
+                                <h3 class="tabs__title">Tabs with soft transitioning effect.</h3>
+                                <p class="tabs__text">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod 
+                                    bibendum laoreet.
+                                </p>
+                                <button class="tabs__button button_filled">Download</button>
+                            </div>
+                        </div>
+                        <picture class="tabs__image">
+                            <source type="image/webp" srcset="./images/tab2.webp, ./images/tab2@2.webp 2x"></source>
+                            <img src="./images/tab2.png, ./images/tab2@2.png 2x" alt="" loading="lazy">
+                        </picture>                    
+                    </div>
+                    <div class="tabs__tab tabs__tab-3">
+                        <div class="tabs__description">
+                            <div class="tabs__description-block">
+                                <h3 class="tabs__title">Tabs with soft transitioning effect.</h3>
+                                <p class="tabs__text">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod 
+                                    bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra 
+                                    justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque 
+                                    penatibus et magnis dis parturient montes.
+                                </p>
+                                <button class="tabs__button button_filled">Download</button>
+                            </div>
+                        </div>
+                        <picture class="tabs__image">
+                            <source type="image/webp" srcset="./images/tab3.webp, ./images/tab1@3.webp 2x"></source>
+                            <img src="./images/tab3.png, ./images/tab1@3.png 2x" alt="" loading="lazy">
+                        </picture>                    
+                    </div>
+                </div>   
             </div>
         </section>
         <section class="benefits">
@@ -174,7 +213,7 @@
                 <ul class="benefits__list">
                     <li class="benefits__list-item">
                         <div class="benefits__icon-block">
-                            <img src="./images/icons/lamp-icon.svg" alt="lamp icon" class="benefits__icon">
+                            <img src="./images/icons/lamp-icon.svg" alt="lamp icon" class="benefits__icon" aria-hidden="true">
                         </div>    
                         <h4 class="benefits__list-item__title">Thoughtful Design</h4>
                         <p class="benefits__list-item__description-text">
@@ -184,7 +223,7 @@
                     </li>
                     <li class="benefits__list-item">
                         <div class="benefits__icon-block">
-                            <img src="./images/icons/keyboard-icon.svg" alt="keyboard icon" class="benefits__icon">
+                            <img src="./images/icons/keyboard-icon.svg" alt="keyboard icon" class="benefits__icon" aria-hidden="true">
                         </div>    
                         <h4 class="benefits__list-item__title">Thoughtful Design</h4>
                         <p class="benefits__list-item__description-text">
@@ -194,7 +233,7 @@
                     </li>
                     <li class="benefits__list-item">
                         <div class="benefits__icon-block">
-                            <img src="./images/icons/lightning-icon.svg" alt="lightning icon" class="benefits__icon">
+                            <img src="./images/icons/lightning-icon.svg" alt="lightning icon" class="benefits__icon" aria-hidden="true">
                         </div>    
                         <h4 class="benefits__list-item__title">Thoughtful Design</h4>
                         <p class="benefits__list-item__description-text">
@@ -278,84 +317,84 @@
                 <p class="pricing__description-text section__description-text">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 </p>
-                <div class="reviews__authors"> 
-                    <div class="reviews__author reviews__author_active">
-                        <div class="reviews__author__message">
-                            <p class="reviews__author__message-text">
-                                Lorem ipsum dolor sit amet, 
-                                consectetur adipisicing elit. Doloribus 
-                                accusamus expedita repellat similique 
-                                odio aspernatur ex.
-                            </p>
-                        </div>
-                        <div class="reviews__author__information">
-                            <div class="reviews__author__avatar">
-                                <picture class="reviews__author__avatar-picture">
-                                    <source type="image/webp" srcset="./images/authors/Davis-Rhiel-Madsen.webp, ./images/authors/Davis-Rhiel-Madsen@2.webp 2x"></source>
-                                    <img src="./images/authors/Davis-Rhiel-Madsen.png, ./images/authors/Davis-Rhiel-Madsen@2.png" alt="Davis Rhiel Madsen" loading="lazy" class="reviews__author__avatar-img">
-                                </picture>                            
-                            </div>
-                            <div class="reviews__author__data">
-                                <h4 class="reviews__author__name">Davis Rhiel Madsen</h4>
-                                <h5 class="reviews__author__post">Manager</h5>
-                            </div>                            
-                        </div>
-                    </div>                   
-                    <div class="reviews__author">
-                        <div class="reviews__author__message">
-                            <p class="reviews__author__message-text">
-                                Lorem ipsum dolor sit amet, 
-                                consectetur adipisicing elit. Doloribus 
-                                accusamus expedita repellat similique 
-                                odio aspernatur ex, architecto eaque 
-                                quo suscipit.
-                            </p>
-                        </div>
-                        <div class="reviews__author__information">
-                            <div class="reviews__author__avatar">
-                                <picture class="reviews__author__avatar-picture">
-                                    <source type="image/webp" srcset="./images/authors/Jaydon-Rosser.webp, ./images/authors/Jaydon-Rosser@2.webp 2x"></source>
-                                    <img src="./images/authors/Jaydon-Rosser.png, ./images/authors/Jaydon-Rosser@2.png" alt="Jaydon Rosser" loading="lazy" class="reviews__author__avatar-img">
-                                </picture>                            
-                            </div>
-                            <div class="reviews__author__data">
-                                <h4 class="reviews__author__name">Jaydon Rosser</h4>
-                                <h5 class="reviews__author__post">Manager</h5>
-                            </div>                            
-                        </div>
+                <div class="reviews__content">
+                    <input type="radio" id="reviews__dots__radio_1" class="reviews__dots__radio" name="review">
+                    <input type="radio" id="reviews__dots__radio_2" class="reviews__dots__radio" name="review"checked>
+                    <input type="radio" id="reviews__dots__radio_3" class="reviews__dots__radio" name="review">
+                    <div class="reviews__dots">                        
+                        <label for="reviews__dots__radio_1" class="reviews__dots__label"></label>
+                        <label for="reviews__dots__radio_2" class="reviews__dots__label"></label>
+                        <label for="reviews__dots__radio_3" class="reviews__dots__label"></label>
                     </div>
-                    <div class="reviews__author">
-                        <div class="reviews__author__message">
-                            <p class="reviews__author__message-text">
-                                Lorem ipsum dolor sit amet, 
-                                consectetur adipisicing elit. 
-                            </p>
-                        </div>
-                        <div class="reviews__author__information">
-                            <div class="reviews__author__avatar">
-                                <picture class="reviews__author__avatar-picture">
-                                    <source type="image/webp" srcset="./images/authors/Cooper-Dorwart.webp, ./images/authors/Cooper-Dorwart@2.webp 2x"></source>
-                                    <img src="./images/authors/Cooper-Dorwart.png, ./images/authors/Cooper-Dorwart@2.png" alt="Cooper Dorwart" loading="lazy" class="reviews__author__avatar-img">
-                                </picture>                            
+                    <div class="reviews__authors"> 
+                        <div class="reviews__author reviews__author-1">
+                            <div class="reviews__author__message">
+                                <p class="reviews__author__message-text">
+                                    Lorem ipsum dolor sit amet, 
+                                    consectetur adipisicing elit. Doloribus 
+                                    accusamus expedita repellat similique 
+                                    odio aspernatur ex.
+                                </p>
                             </div>
-                            <div class="reviews__author__data">
-                                <h4 class="reviews__author__name">Cooper Dorwart
-                                </h4>
-                                <h5 class="reviews__author__post">Manager</h5>
-                            </div>                            
-                        </div>       
-                    </div>                                                                              
-                </div>
-                <div class="reviews__dots">
-                    <input type="radio" id="reviews__dots__radio_1" class="reviews__dots__radio" name="tab" value="tab_1">
-                    <label for="reviews__dots__radio_1" class="reviews__dots__label"></label>
-
-                    <input type="radio" id="reviews__dots__radio_2" class="reviews__dots__radio" name="tab" value="tab_2" checked>
-                    <label for="reviews__dots__radio_2" class="reviews__dots__label"></label>
-
-                    <input type="radio" id="reviews__dots__radio_3" class="reviews__dots__radio" name="tab" value="tab_3">
-                    <label for="reviews__dots__radio_3" class="reviews__dots__label"></label>
-                </div>
+                            <div class="reviews__author__information">
+                                <div class="reviews__author__avatar">
+                                    <picture class="reviews__author__avatar-picture">
+                                        <source type="image/webp" srcset="./images/authors/Davis-Rhiel-Madsen.webp, ./images/authors/Davis-Rhiel-Madsen@2.webp 2x"></source>
+                                        <img src="./images/authors/Davis-Rhiel-Madsen.png, ./images/authors/Davis-Rhiel-Madsen@2.png" alt="Davis Rhiel Madsen" loading="lazy" class="reviews__author__avatar-img">
+                                    </picture>                            
+                                </div>
+                                <div class="reviews__author__data">
+                                    <h4 class="reviews__author__name">Davis Rhiel Madsen</h4>
+                                    <h5 class="reviews__author__post">Manager</h5>
+                                </div>                            
+                            </div>
+                        </div>                   
+                        <div class="reviews__author reviews__author-2">
+                            <div class="reviews__author__message">
+                                <p class="reviews__author__message-text">
+                                    Lorem ipsum dolor sit amet, 
+                                    consectetur adipisicing elit. Doloribus 
+                                    accusamus expedita repellat similique 
+                                    odio aspernatur ex, architecto eaque 
+                                    quo suscipit.
+                                </p>
+                            </div>
+                            <div class="reviews__author__information">
+                                <div class="reviews__author__avatar">
+                                    <picture class="reviews__author__avatar-picture">
+                                        <source type="image/webp" srcset="./images/authors/Jaydon-Rosser.webp, ./images/authors/Jaydon-Rosser@2.webp 2x"></source>
+                                        <img src="./images/authors/Jaydon-Rosser.png, ./images/authors/Jaydon-Rosser@2.png" alt="Jaydon Rosser" loading="lazy" class="reviews__author__avatar-img">
+                                    </picture>                            
+                                </div>
+                                <div class="reviews__author__data">
+                                    <h4 class="reviews__author__name">Jaydon Rosser</h4>
+                                    <h5 class="reviews__author__post">Manager</h5>
+                                </div>                            
+                            </div>
+                        </div>
+                        <div class="reviews__author reviews__author-3">
+                            <div class="reviews__author__message">
+                                <p class="reviews__author__message-text">
+                                    Lorem ipsum dolor sit amet, 
+                                    consectetur adipisicing elit. 
+                                </p>
+                            </div>
+                            <div class="reviews__author__information">
+                                <div class="reviews__author__avatar">
+                                    <picture class="reviews__author__avatar-picture">
+                                        <source type="image/webp" srcset="./images/authors/Cooper-Dorwart.webp, ./images/authors/Cooper-Dorwart@2.webp 2x"></source>
+                                        <img src="./images/authors/Cooper-Dorwart.png, ./images/authors/Cooper-Dorwart@2.png" alt="Cooper Dorwart" loading="lazy" class="reviews__author__avatar-img">
+                                    </picture>                            
+                                </div>
+                                <div class="reviews__author__data">
+                                    <h4 class="reviews__author__name">Cooper Dorwart
+                                    </h4>
+                                    <h5 class="reviews__author__post">Manager</h5>
+                                </div>                            
+                            </div>       
+                        </div>                                                                              
+                    </div>                    
+                </div>    
             </div>
         </section>
         <section class="stylish">
