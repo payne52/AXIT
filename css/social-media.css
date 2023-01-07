@@ -1,6 +1,7 @@
 .social-media {
     background-color: var(--social-media-backgound);
-    padding: 0;
+    padding-top: 0;
+    padding-bottom: 0;
 }
 .social-media > .container {
     display: flex;
@@ -10,7 +11,7 @@
     flex: 5;
 }
 .social-media__title {
-    margin: 20px 0 38px;
+    margin: 15px 0 30px;
 }
 .social-media__text {
     color: var(--gray-text);

@@ -1,3 +1,6 @@
+.contact-us__description-text {
+    margin-bottom: 70px;
+}
 .contact-us__form {
     display: flex;   
     flex-wrap: wrap;
@@ -9,7 +12,9 @@
 }
 .contact-us__form__item {
     display: flex;
+    flex-direction: row-reverse;
     margin-bottom: 40px;
+    position: relative;
 }
 .contact-us__form__label {
     line-height: 50px;
@@ -34,9 +39,24 @@
     border: 0;
     outline: none;
 }
-.contact-us__form__item,
+.contact-us__form__label::after {
+    content: '';
+    display: block;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+}
+.contact-us__form__label[for="message"]::after {
+    content: none;
+}
+.contact-us__form__label::after,
 .contact-us__form__textarea {
     border-bottom: 1px solid var(--form-color);
+}
+.contact-us__form__item .input_text:focus + .contact-us__form__label::after,
+.contact-us__form__textarea:focus {
+    border-color: var(--primary-color);
 }
 .contact-us__form__submit {
     max-width: 370px;

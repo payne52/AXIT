@@ -26,16 +26,16 @@
     font-family: 'Open Sans', sans-serif;
     font-weight: 700;
     font-size: 1.33em;
-    line-height: 60px;
+    line-height: 58px;
 }
 .pricing__option__price {
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
     font-size: 2em;
-    line-height: 100px;
+    line-height: 98px;
 }
 .pricing__option__description-text {
-    line-height: 50px;
+    line-height: 48px;
     color: var(--half-opacity-white);    
 }
 .pricing__option__items-list {
@@ -46,6 +46,6 @@
 .pricing__option__item {
     background-color: var(--primary-background);
     color: var(--gray-text);
-    line-height: 50px;
+    line-height: 48px;
     border: 1px solid var(--primary-gray);
 }

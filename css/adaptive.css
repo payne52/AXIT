@@ -3,12 +3,15 @@
         margin-left: 0;
     }
 }
-@media (max-width: 1230px) {
+@media (max-width: 1200px) {
     body {
         font-size: 14px;
-    }
-    .container {
-        max-width: 992px;        
+    }    
+    header,
+    section,
+    footer {
+        padding-left: 15px;
+        padding-right: 15px;
     }
     .header__menu-link,
     .input_text, 
@@ -17,6 +20,7 @@
     .contact-us__form__label {
         font-size: 1em;
     }
+    .header > .container,
     .banner > .container,
     .social-media > .container,
     .tabs__tab,
@@ -27,15 +31,35 @@
     .footer__icons__list {
         column-gap: 20px;
     }
+    .header > .container::before,
+    .banner > .container::before {
+        content: '';
+        flex: 1;
+    }
+    .header__logo-block {
+        flex: 4;
+    }
     .banner__logo-img {
         width: 115px;
+        margin-top: 15px;
     }
     h1,
     .pricing__option__price {
         font-size: 2.57em;
     }
+    .banner > .container::before {
+        content: '';
+        flex: 1;
+    }
+    .banner__description {
+        flex: 6;
+    }    
     .banner__title {
         margin-bottom: 30px;        
+    }
+    .banner__title::after {
+        width: 115px;
+        margin-top: 45px;
     }
     .banner__text {
         max-width: 50%;
@@ -50,13 +74,14 @@
     .banner__button {
         margin-top: 12px;
         max-width: 180px;
-        line-height: 50px;
+        line-height: 46px;
     }
     .banner__form__submit {
         font-size: 1.07em;
+        margin-top: 55px;
     }
     .social-media__title {
-        margin: 15px 0 25px;
+        margin: 10px 0 25px;
     }
     .social-media__icons__list {
         margin-top: 25px;
@@ -72,7 +97,7 @@
     .tabs__selector {
         width: 170px;
     }
-    .tabs__description {
+    .tabs__description-block {
         padding: 30px 0 50px 80px;
     }
     .tabs__button {
@@ -85,13 +110,19 @@
     }
     .section__title,
     .section__title::after {
-        margin-top: 50px;        
+        margin-top: 45px;        
     }
     .section__title {
         margin-bottom: 30px;
     }
+    .section__title::after {
+        width: 140px;
+    }
     .section__description-text {
         margin-bottom: 30px;
+    }
+    .benefits__list-item {
+        padding-top: 35px;
     }
     .benefits__icon-block {
         width: 80px;
@@ -109,14 +140,14 @@
         margin-top: 50px;
     }
     .pricing__option__title {
-        line-height: 50px;
+        line-height: 52px;
     }
     .pricing__option__price {
-        line-height: 90px;
+        line-height: 88px;
     }
     .pricing__option__description-text,
     .pricing__option__item {
-        line-height: 45px;
+        line-height: 43px;
     }
     .reviews__author__message {
         height: 180px;
@@ -143,29 +174,39 @@
     .contact-us__form__message {
         width: calc(50% - 10px);
     }
+    .contact-us__form__submit {
+        max-width: 320px;
+    }
     .footer__icons__link {
         width: 45px;
         height: 45px;
         line-height: 45px;
     }
 }
-@media (max-width: 1092px) {
-    .container {
-        padding: 0 15px;
+@media (max-width: 992px) {
+    .header {
+        padding-left: 20px;
+        padding-right: 20px;
     }
-    .header > .container {
-        padding: 0 20px;
-        position: initial;
-        width: calc(100% - 40px);
+    .header > .container {        
+        position: initial;        
+    }
+    .header > .container::before, 
+    .banner > .container::before {
+        content: none;
     }
     .header__logo-link {
         height: 55px;
         line-height: 55px;
     }
+    .header__logo-img {
+        max-height: 22px;
+    }
     .header__menu-toggle {
         display: block;        
     }
     .header__menu-block {    
+        display: initial;
         position: absolute;
         top: 55px;
         left: 0;
@@ -196,7 +237,8 @@
         text-align: center;
     }
     .banner {
-        padding: 85px 0 50px;
+        padding-top: 85px;
+        padding-bottom: 50px;
     }
     .banner__logo-img {
         display: none;
@@ -216,27 +258,25 @@
     .contact-us__form__submit {        
         max-width: 300px;        
     }
+    .tabs__button,
+    .contact-us__form__submit {
+        line-height: 50px;
+    }
     .banner__button {
         display: block;
-        margin: 28px auto 55px;
+        margin: 40px auto 55px;
     }
     .banner__form {
-        padding: 40px 20px 0;
-    }
-    .banner__form__title,
-    .pricing__option__description-text,
-    .pricing__option__item,
-    .reviews__author__name {
-        font-size: 1em;
-    }
+        padding: 30px 20px 0;
+    }    
     .banner__form__title {        
         margin-bottom: 20px;
     }
     .banner__form__submit {
-        margin-top: 50px;
+        margin-top: 40px;
     }
     .social-media__title {
-        margin: 30px 0 25px;
+        margin: 40px 0 25px;
     }
     .social-media__icons__list {
         margin: 16px 0 45px;
@@ -245,10 +285,11 @@
         justify-content: center;
         column-gap: 15px;
     }
+    .icons__list-item {
+        width: 10%;        
+    } 
     .icons__link {
-        width: 26px;
-        height: 26px;
-        line-height: 26px;    
+        width: 100%;
     }
     .tabs {
         padding-top: 40px;
@@ -256,16 +297,17 @@
     .tabs__image {
         display: none;
     }
-    .tabs__description {
+    .tabs__description-block {
         padding: 35px 20px 30px;
     }
     .tabs__selector {
-        width: auto;
-        max-width: 33%;
-        padding: 0 30px;
+        width: 33%;
+        padding: 0;
     }
     .tabs__title {
         margin-bottom: 60px;
+        margin-left: 10px;
+        margin-right: 10px;
     }
     .tabs__text {
         margin-bottom: 15px;
@@ -289,7 +331,8 @@
         margin-bottom: 35px;
     }
     .pricing {
-        padding: 1px 0 0;
+        padding-top: 1px;
+        padding-bottom: 0;
     }
     .pricing__options {
         align-items: initial;
@@ -299,20 +342,13 @@
     .pricing__option:nth-child(2) {
         margin: 0 0 25px;
     }
-    .pricing__option__title {
-        line-height: 45px;
-        font-size: 1.28em;
-    }
-    .pricing__option__price {
-        line-height: 80px;
-        font-size: 1.71em;        
-    }
     .pricing__option__description-text,
     .pricing__option__item {
         line-height: 40px;
     }
     .reviews {
-        padding: 0 0 30px;
+        padding-top: 0;
+        padding-bottom: 30px;
     }
     .reviews__author {
         display: none;
@@ -327,22 +363,24 @@
         width: 60px;
     }
     .reviews__author__name {
-        margin: 20px 0 15px;
-    }
-    .reviews__author__post {
-        font-size: 0.93em;
+        margin: 15px 0 15px;
     }
     .reviews__dots {
         display: flex;
     }
     .stylish {
-        padding: 1px 0 60px;
+        padding-top: 1px;
+        padding-bottom: 60px;
     }
     .stylish__description-text {
         margin-bottom: 60px;
     }
+    .stylish__button {
+        line-height: 46px;
+    }
     .contact-us {
-        padding: 1px 0 40px;
+        padding-top: 1px;
+        padding-bottom: 40px;
     }
     .contact-us__description-text {
         margin-bottom: 50px;
@@ -356,12 +394,47 @@
         margin-bottom: 35px;
     }
     .contact-us__form__textarea {
-        height: 180px;
+        height: 170px;
     }
     .footer {
-        padding: 35px 0 45px;
+        padding-top: 35px;
+        padding-bottom: 45px;
     }
     .footer__copyright {
         margin-top: 40px;
     }
+}
+@media (max-width: 576px) {
+    .banner__form__title,
+    .pricing__option__description-text,
+    .pricing__option__item,
+    .reviews__author__name {
+        font-size: 1em;
+    }
+    h3,
+    .pricing__option__title {
+        font-size: 1.28em;
+    }
+    .pricing__option__title {
+        line-height: 45px;        
+    }
+    .pricing__option__price {
+        line-height: 76px;
+        font-size: 1.71em;        
+    }
+    .pricing__option__description-text,
+    .pricing__option__item {
+        line-height: 37px;
+    }
+    .reviews__author__post {
+        font-size: 0.93em;
+    } 
+    .icons__list-item {
+        width: auto;
+    } 
+    .icons__link {
+        width: 26px;
+        height: 26px;
+        line-height: 26px;    
+    } 
 }

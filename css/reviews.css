@@ -6,7 +6,7 @@
     flex: 1;
 }
 .reviews__author__message {
-    height: 200px;
+    height: 180px;
     margin-bottom: 65px;
     display: flex;
     align-items: center;
@@ -25,7 +25,7 @@
     border-right: 15px solid transparent;
     position: absolute;
     bottom: -20px;
-    left: 20%;
+    left: 16%;
 }
 .reviews__author__message-text {
     color: var(--gray-text);
@@ -37,7 +37,7 @@
     column-gap: 30px;
 }
 .reviews__author__name {
-    margin: 15px 0 35px;
+    margin: 15px 0 25px;
 }
 .reviews__author__post {
     margin: 0 0 15px;
@@ -50,8 +50,8 @@
 }
 .reviews__dots__label {
     display: inline-block;
-    width: 10px;
-    height: 10px;
+    width: 8px;
+    height: 8px;
     border: 1px solid var(--gray-text);
     border-radius: 50%;
 }

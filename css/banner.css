@@ -2,8 +2,7 @@
     position: relative;
     display: flex;
     align-items: center;
-    min-height: calc(100vh - 176px);
-    padding: 50px 0;
+    min-height: calc(100vh - 176px);    
     background: linear-gradient(to bottom, var(--half-opacity-black), var(--half-opacity-black)), url(../images/banner.webp);
     background-repeat: no-repeat;
     background-position: center bottom;

@@ -1,5 +1,6 @@
 .tabs {
-    padding: 100px 0 0;
+    padding-top: 100px;
+    padding-bottom: 0;
 }
 .tabs__selectors {
     margin: 0;
@@ -33,9 +34,12 @@
     position: relative;
     z-index: 1;
 }
-.tabs__description {
-    padding: 40px 0 55px 100px;    
+.tabs__description {    
     flex: 7;
+    /*width: calc(7 / 12 * 100%);*/
+}
+.tabs__description-block {
+    padding: 40px 0 55px 100px;
 }
 .tabs__title {
     margin: 0 0 65px;
@@ -50,6 +54,7 @@
 }
 .tabs__image {    
     flex: 5;
+    /*width: calc(5 / 12 * 100%);*/
 }
 .tabs__image img {
     display: block;

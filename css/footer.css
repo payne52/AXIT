@@ -1,6 +1,7 @@
 .footer {
     background-color: var(--secondary-background);
-    padding: 30px 0px;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 .footer__icons__list {
     margin: 0;

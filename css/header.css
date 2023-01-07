@@ -34,7 +34,7 @@
     background: var(--secondary-color);    
 }
 .header__logo-block {
-    flex: 1;
+    flex: 5;
 }
 .header__logo-link {
     display: inline-block;
@@ -53,6 +53,11 @@
 }
 .header__checkbox {
     display: none;
+}
+.header__menu-block {
+    display: flex;
+    justify-content: flex-end;
+    flex: 7;
 }
 .header__menu-toggle {
     display: none;
