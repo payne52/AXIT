@@ -353,9 +353,9 @@
     .reviews__author {
         display: none;
     }
-    #reviews__dots__radio_1:checked ~ .reviews__authors .reviews__author-1,
-    #reviews__dots__radio_2:checked ~ .reviews__authors .reviews__author-2,
-    #reviews__dots__radio_3:checked ~ .reviews__authors .reviews__author-3 {
+    #review_1:checked ~ .reviews__authors [data-id="author-1"],
+    #review_2:checked ~ .reviews__authors [data-id="author-2"],
+    #review_3:checked ~ .reviews__authors [data-id="author-3"] {
         display: block;
     }
     .reviews__author__message {

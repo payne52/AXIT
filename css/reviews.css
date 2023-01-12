@@ -62,8 +62,8 @@
 .reviews__dots__radio {
     display: none;
 }
-#reviews__dots__radio_1:checked ~ .reviews__dots .reviews__dots__label[for="reviews__dots__radio_1"],
-#reviews__dots__radio_2:checked ~ .reviews__dots .reviews__dots__label[for="reviews__dots__radio_2"],
-#reviews__dots__radio_3:checked ~ .reviews__dots .reviews__dots__label[for="reviews__dots__radio_3"] {
+#review_1:checked ~ .reviews__dots .reviews__dots__label[for="review_1"],
+#review_2:checked ~ .reviews__dots .reviews__dots__label[for="review_2"],
+#review_3:checked ~ .reviews__dots .reviews__dots__label[for="review_3"] {
     background-color: var(--gray-text);
 }

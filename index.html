@@ -163,8 +163,8 @@
                             </div>
                         </div>
                         <picture class="tabs__image">
-                            <source type="image/webp" srcset="./images/tab1.webp, ./images/tab1@2.webp 2x"></source>
-                            <img src="./images/tab1.png, ./images/tab1@2.png 2x" alt="" loading="lazy">
+                            <source type="image/webp" srcset="./images/tab1.webp, ./images/tab1@2.webp 2x">
+                            <img src="./images/tab1.png" srcset="./images/tab1@2.png 2x" alt="Statue of Liberty" loading="lazy">
                         </picture>                    
                     </div>
                     <div class="tabs__tab tabs__tab-2">
@@ -179,8 +179,8 @@
                             </div>
                         </div>
                         <picture class="tabs__image">
-                            <source type="image/webp" srcset="./images/tab2.webp, ./images/tab2@2.webp 2x"></source>
-                            <img src="./images/tab2.png, ./images/tab2@2.png 2x" alt="" loading="lazy">
+                            <source type="image/webp" srcset="./images/tab2.webp, ./images/tab2@2.webp 2x">
+                            <img src="./images/tab2.png" srcset="./images/tab2@2.png 2x" alt="Empire State Building" loading="lazy">
                         </picture>                    
                     </div>
                     <div class="tabs__tab tabs__tab-3">
@@ -197,8 +197,8 @@
                             </div>
                         </div>
                         <picture class="tabs__image">
-                            <source type="image/webp" srcset="./images/tab3.webp, ./images/tab1@3.webp 2x"></source>
-                            <img src="./images/tab3.png, ./images/tab1@3.png 2x" alt="" loading="lazy">
+                            <source type="image/webp" srcset="./images/tab3.webp, ./images/tab1@3.webp 2x">
+                            <img src="./images/tab3.png" srcset="./images/tab1@3.png 2x" alt="Central Park" loading="lazy">
                         </picture>                    
                     </div>
                 </div>   
@@ -318,16 +318,16 @@
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 </p>
                 <div class="reviews__content">
-                    <input type="radio" id="reviews__dots__radio_1" class="reviews__dots__radio" name="review">
-                    <input type="radio" id="reviews__dots__radio_2" class="reviews__dots__radio" name="review"checked>
-                    <input type="radio" id="reviews__dots__radio_3" class="reviews__dots__radio" name="review">
+                    <input type="radio" id="review_1" class="reviews__dots__radio" name="review">
+                    <input type="radio" id="review_2" class="reviews__dots__radio" name="review"checked>
+                    <input type="radio" id="review_3" class="reviews__dots__radio" name="review">
                     <div class="reviews__dots">                        
-                        <label for="reviews__dots__radio_1" class="reviews__dots__label"></label>
-                        <label for="reviews__dots__radio_2" class="reviews__dots__label"></label>
-                        <label for="reviews__dots__radio_3" class="reviews__dots__label"></label>
+                        <label for="review_1" class="reviews__dots__label"></label>
+                        <label for="review_2" class="reviews__dots__label"></label>
+                        <label for="review_3" class="reviews__dots__label"></label>
                     </div>
                     <div class="reviews__authors"> 
-                        <div class="reviews__author reviews__author-1">
+                        <div class="reviews__author" data-id="author-1">
                             <div class="reviews__author__message">
                                 <p class="reviews__author__message-text">
                                     Lorem ipsum dolor sit amet, 
@@ -339,8 +339,8 @@
                             <div class="reviews__author__information">
                                 <div class="reviews__author__avatar">
                                     <picture class="reviews__author__avatar-picture">
-                                        <source type="image/webp" srcset="./images/authors/Davis-Rhiel-Madsen.webp, ./images/authors/Davis-Rhiel-Madsen@2.webp 2x"></source>
-                                        <img src="./images/authors/Davis-Rhiel-Madsen.png, ./images/authors/Davis-Rhiel-Madsen@2.png" alt="Davis Rhiel Madsen" loading="lazy" class="reviews__author__avatar-img">
+                                        <source type="image/webp" srcset="./images/authors/Davis-Rhiel-Madsen.webp, ./images/authors/Davis-Rhiel-Madsen@2.webp 2x">
+                                        <img src="./images/authors/Davis-Rhiel-Madsen.png" srcset="./images/authors/Davis-Rhiel-Madsen@2.png 2x" alt="Davis Rhiel Madsen" loading="lazy" class="reviews__author__avatar-img">
                                     </picture>                            
                                 </div>
                                 <div class="reviews__author__data">
@@ -349,7 +349,7 @@
                                 </div>                            
                             </div>
                         </div>                   
-                        <div class="reviews__author reviews__author-2">
+                        <div class="reviews__author" data-id="author-2">
                             <div class="reviews__author__message">
                                 <p class="reviews__author__message-text">
                                     Lorem ipsum dolor sit amet, 
@@ -362,8 +362,8 @@
                             <div class="reviews__author__information">
                                 <div class="reviews__author__avatar">
                                     <picture class="reviews__author__avatar-picture">
-                                        <source type="image/webp" srcset="./images/authors/Jaydon-Rosser.webp, ./images/authors/Jaydon-Rosser@2.webp 2x"></source>
-                                        <img src="./images/authors/Jaydon-Rosser.png, ./images/authors/Jaydon-Rosser@2.png" alt="Jaydon Rosser" loading="lazy" class="reviews__author__avatar-img">
+                                        <source type="image/webp" srcset="./images/authors/Jaydon-Rosser.webp, ./images/authors/Jaydon-Rosser@2.webp 2x">
+                                        <img src="./images/authors/Jaydon-Rosser.png" srcset="./images/authors/Jaydon-Rosser@2.png 2x" alt="Jaydon Rosser" loading="lazy" class="reviews__author__avatar-img">
                                     </picture>                            
                                 </div>
                                 <div class="reviews__author__data">
@@ -372,7 +372,7 @@
                                 </div>                            
                             </div>
                         </div>
-                        <div class="reviews__author reviews__author-3">
+                        <div class="reviews__author" data-id="author-3">
                             <div class="reviews__author__message">
                                 <p class="reviews__author__message-text">
                                     Lorem ipsum dolor sit amet, 
@@ -382,8 +382,8 @@
                             <div class="reviews__author__information">
                                 <div class="reviews__author__avatar">
                                     <picture class="reviews__author__avatar-picture">
-                                        <source type="image/webp" srcset="./images/authors/Cooper-Dorwart.webp, ./images/authors/Cooper-Dorwart@2.webp 2x"></source>
-                                        <img src="./images/authors/Cooper-Dorwart.png, ./images/authors/Cooper-Dorwart@2.png" alt="Cooper Dorwart" loading="lazy" class="reviews__author__avatar-img">
+                                        <source type="image/webp" srcset="./images/authors/Cooper-Dorwart.webp, ./images/authors/Cooper-Dorwart@2.webp 2x">
+                                        <img src="./images/authors/Cooper-Dorwart.png" srcset="./images/authors/Cooper-Dorwart@2.png 2x" alt="Cooper Dorwart" loading="lazy" class="reviews__author__avatar-img">
                                     </picture>                            
                                 </div>
                                 <div class="reviews__author__data">
