@@ -47,14 +47,15 @@ section {
 .section__title {
     text-align: center;
     text-transform: uppercase;
-    margin: 50px 0 40px;    
-}
-.section__title::after {
-    content: '';
+    margin: 50px 0 40px;
+
+    &::after {
+        content: '';
     display: block;
     margin: 55px auto 0;
     width: 170px;
     border-bottom: 1px solid var(--primary-color);
+    }    
 }
 .section__description-text {
     color: var(--gray-text);
@@ -73,9 +74,6 @@ button,
     font-size: 1em;
     color: var(--secondary-text);
     transition-duration: .1s;
-}
-.banner__form .input_text:focus {
-    border-color: var(--primary-color);;
 }
 .button_filled,
 .input_submit {
@@ -108,14 +106,6 @@ button,
     color: var(--secondary-text);
     border-color: var(--secondary-color);
     background-color: var(--secondary-color);
-}
-.banner__form__item,
-.banner__form__item .input_text {
-    display: inline-block;
-    width: 100%;
-}
-.banner__form__item {
-    margin-bottom: 20px;
 }
 .input_text {
     padding: 0;

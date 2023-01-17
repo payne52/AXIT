@@ -1,0 +1,24 @@
+.stylish {
+  background: linear-gradient(to bottom, var(--half-opacity-black), var(--half-opacity-black)), url("stylish.2527ea54.webp");
+  text-align: center;
+  background-position: bottom;
+  position: relative;
+}
+
+.stylish__title, .stylish__description-text {
+  color: var(--secondary-text);
+}
+
+.stylish__title:after {
+  border-color: var(--primary-background);
+}
+
+.stylish__description-text {
+  margin-bottom: 75px;
+}
+
+.stylish__button {
+  max-width: 370px;
+}
+
+/*# sourceMappingURL=index.71fd2aa8.css.map */

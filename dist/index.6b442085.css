@@ -1,0 +1,37 @@
+@font-face {
+  font-family: Raleway;
+  font-weight: 400;
+  src: local(Raleway), url("Raleway-Regular.28383f19.woff") format("woff");
+}
+
+@font-face {
+  font-family: Raleway;
+  font-weight: 500;
+  src: local(Raleway Medium), url("Raleway-Medium.570c0caa.woff") format("woff");
+}
+
+@font-face {
+  font-family: Raleway;
+  font-weight: 700;
+  src: local(Raleway Bold), url("Raleway-Bold.f77f3e19.woff") format("woff");
+}
+
+@font-face {
+  font-family: Open Sans;
+  font-weight: 400;
+  src: local(Open Sans), url("OpenSans-Regular.e36ab016.woff") format("woff");
+}
+
+@font-face {
+  font-family: Open Sans;
+  font-weight: 600;
+  src: local(Open Sans SemiBold), url("OpenSans-SemiBold.229d31a5.woff") format("woff");
+}
+
+@font-face {
+  font-family: Open Sans;
+  font-weight: 700;
+  src: local(Open Sans Bold), url("OpenSans-Bold.2c88fa56.woff") format("woff");
+}
+
+/*# sourceMappingURL=index.6b442085.css.map */
