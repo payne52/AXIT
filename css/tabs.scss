@@ -1,72 +1,70 @@
 .tabs {
     padding-top: 100px;
     padding-bottom: 0;
-}
-.tabs__radio {
-    display: none;
-}
-.tabs__selectors {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    list-style-type: none;
-    text-align: center;
-}
-.tabs__selector {
-    background-color: var(--primary-background);
-    border: 1px solid var(--primary-background);
-    border-bottom: 0;
-    border-radius: 5px 5px 0 0;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 0.77em;
-    text-transform: uppercase;
-    line-height: 40px;
-    width: 200px;
-    margin-bottom: -1px;
-    padding: 0;
-    position: relative;
-    cursor: pointer;
+    &__radio {
+        display: none;
+    }
+    &__selectors {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        list-style-type: none;
+        text-align: center;
+    }
+    &__selector {
+        background-color: $primary-background;
+        border: 1px solid $primary-background;
+        border-bottom: 0;
+        border-radius: 5px 5px 0 0;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 0.77em;
+        text-transform: uppercase;
+        line-height: 40px;
+        width: 200px;
+        margin-bottom: -1px;
+        padding: 0;
+        position: relative;
+        cursor: pointer;
+    }
+    &__tab {
+        border: 1px solid $tabs-border;
+        position: relative;
+        z-index: 1;
+        display: none;
+    }
+    &__description {    
+        flex: 7;
+    }
+    &__description-block {
+        padding: 40px 0 55px 100px;
+    }
+    &__title {
+        margin: 0 0 65px;
+    }
+    &__text {
+        margin: 0 0 20px;
+    }
+    &__button {
+        width: 100%;
+        max-width: 270px;
+        margin-top: 10px;
+    }
+    &__image {    
+        flex: 5;        
+    }
+    &__image img {
+        display: block;
+        width: 100%;
+    }
 }
 #tab1:checked ~ .tabs__selectors .tabs__selector[for="tab1"],
 #tab2:checked ~ .tabs__selectors .tabs__selector[for="tab2"],
 #tab3:checked ~ .tabs__selectors .tabs__selector[for="tab3"] {
-    border-color: var(--tabs-border);
+    border-color: $tabs-border;
     z-index: 2;
-}
-.tabs__tab {
-    border: 1px solid var(--tabs-border);
-    column-gap: 30px;
-    position: relative;
-    z-index: 1;
-    display: none;
 }
 #tab1:checked ~ .tabs__content .tabs__tab-1,
 #tab2:checked ~ .tabs__content .tabs__tab-2,
 #tab3:checked ~ .tabs__content .tabs__tab-3 {
     display: flex;    
-}
-.tabs__description {    
-    flex: 7;
-}
-.tabs__description-block {
-    padding: 40px 0 55px 100px;
-}
-.tabs__title {
-    margin: 0 0 65px;
-}
-.tabs__text {
-    margin: 0 0 20px;
-}
-.tabs__button {
-    width: 100%;
-    max-width: 270px;
-    margin-top: 10px;
-}
-.tabs__image {    
-    flex: 5;
-    /*width: calc(5 / 12 * 100%);*/
-}
-.tabs__image img {
-    display: block;
-    width: 100%;
 }

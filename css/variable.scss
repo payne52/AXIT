@@ -1,23 +1,21 @@
-:root {
-    --primary-color: #EC7979;
-    --secondary-color: #AB4949;
+$primary-color: #EC7979;
+$secondary-color: #AB4949;
 
-    --primary-text: #000;
-    --secondary-text: #fff;
-    --gray-text: #86878B;
+$primary-text: #000;
+$secondary-text: #fff;
+$gray-text: #86878B;
 
-    --primary-background: #fff;
-    --secondary-background: #000;
-    --social-media-backgound: #F8EFEF;
+$primary-background: #fff;
+$secondary-background: #000;
+$social-media-backgound: #F8EFEF;
 
-    --dark-color: #333;
+$dark-color: #333;
 
-    --primary-gray: #F5F5F5;
-    --secondary-gray: #E2E2E2;
+$primary-gray: #F5F5F5;
+$secondary-gray: #E2E2E2;
 
-    --form-color: #BDBDBD;
-    --tabs-border: #C6CBCD;
+$form-color: #BDBDBD;
+$tabs-border: #C6CBCD;
 
-    --half-opacity-black: rgba(0,0,0,0.5);
-    --half-opacity-white: rgba(255,255,255,0.5);
-}
+$half-opacity-black: rgba(0,0,0,0.5);
+$half-opacity-white: rgba(255,255,255,0.5);

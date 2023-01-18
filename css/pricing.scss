@@ -1,51 +1,49 @@
 .pricing {
-    background-color: var(--primary-gray);
-}
-.pricing__options {
-    display: flex;    
-    align-items: flex-start;
-    column-gap: 30px;
-}
-.pricing__option {
-    flex: 1;
-    text-align: center;   
-}
-.pricing__option:nth-child(2) {
-    margin-top: -20px;
-    box-shadow: 0 4px 10px rgba(51, 51, 51, 0.2);
-}
-.pricing__option__title,
-.pricing__option__price,
-.pricing__option__description-text {
-    color: var(--secondary-text);
-    background-color: var(--dark-color);
-    border: 1px solid var(--primary-gray);
-    margin: 0;
-}
-.pricing__option__title {
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 700;
-    font-size: 1.33em;
-    line-height: 58px;
-}
-.pricing__option__price {
-    font-family: 'Raleway', sans-serif;
-    font-weight: 700;
-    font-size: 2em;
-    line-height: 98px;
-}
-.pricing__option__description-text {
-    line-height: 48px;
-    color: var(--half-opacity-white);    
-}
-.pricing__option__items-list {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-}
-.pricing__option__item {
-    background-color: var(--primary-background);
-    color: var(--gray-text);
-    line-height: 48px;
-    border: 1px solid var(--primary-gray);
+    background-color: $primary-gray;
+    &__options {
+        align-items: flex-start;
+    }
+    &__option {
+        flex: 1;
+        text-align: center;
+        &:nth-child(2) {
+            margin-top: -20px;
+            box-shadow: 0 4px 10px rgba(51, 51, 51, 0.2);
+        }
+        &__title,
+        &__price,
+        &__description-text {
+            color: $secondary-text;
+            background-color: $dark-color;
+            border: 1px solid $primary-gray;
+            margin: 0;
+        }
+        &__title {
+            font-family: 'Open Sans', sans-serif;
+            font-weight: 700;
+            font-size: 1.33em;
+            line-height: 58px;
+        }
+        &__price {
+            font-family: 'Raleway', sans-serif;
+            font-weight: 700;
+            font-size: 2em;
+            line-height: 98px;
+        }
+        &__description-text {
+            line-height: 48px;
+            color: $half-opacity-white;    
+        }
+        &__items-list {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+        &__item {
+            background-color: $primary-background;
+            color: $gray-text;
+            line-height: 48px;
+            border: 1px solid $primary-gray;
+        }
+    }
 }

@@ -1,37 +1,37 @@
-.benefits__list {
-    display: flex;
-    column-gap: 30px;
-    list-style-type: none;
-    text-align: center;
-    padding: 0;
-    margin: 0;
-}
-.benefits__list-item {
-    padding: 30px 0 0;
-    transition: 0.2s;
-}
-.benefits__icon-block {
-    width: 90px;
-    height: 90px;
-    line-height: 90px;
-    border: 1px solid var(--primary-color);
-    border-radius: 50%;    
-    margin: 0 auto 74px auto;
-    text-align: center;
-    transition: 0.2s;
-    transition-timing-function: ease-in-out;
-}
-.benefits__icon {
-    vertical-align: middle;
-    transition: 0.2s;
-    transition-timing-function: ease-in-out;
-}
-.benefits__list-item:hover .benefits__icon-block {
-    transform: scale(1.25);
-}
-.benefits__list-item:hover .benefits__icon {
-    transform: scale(0.90);
-}
-.benefits__list-item__description-text {
-    margin-bottom: 10px;
+.benefits {
+    &__list {
+        list-style-type: none;
+        text-align: center;
+        padding: 0;
+        margin: 0;
+    }
+    &__list-item {
+        padding: 30px 0 0;
+        transition: 0.2s;
+        &__description-text {
+            margin-bottom: 10px;
+        }
+        &:hover .benefits__icon-block {
+            transform: scale(1.25);
+        }
+        &:hover .benefits__icon {
+            transform: scale(0.90);
+        }
+    }
+    &__icon-block {
+        width: 90px;
+        height: 90px;
+        line-height: 90px;
+        border: 1px solid $primary-color;
+        border-radius: 50%;    
+        margin: 0 auto 74px auto;
+        text-align: center;
+        transition: 0.2s;
+        transition-timing-function: ease-in-out;
+    }
+    &__icon {
+        vertical-align: middle;
+        transition: 0.2s;
+        transition-timing-function: ease-in-out;
+    }
 }

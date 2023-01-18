@@ -3,15 +3,10 @@
     display: flex;
     align-items: center;
     min-height: calc(100vh - 176px);    
-    background: linear-gradient(to bottom, var(--half-opacity-black), var(--half-opacity-black)), url(../images/banner.webp);
+    background: linear-gradient(to bottom, $half-opacity-black, $half-opacity-black), url(../images/banner.webp);
     background-repeat: no-repeat;
     background-position: center bottom;
-    color: var(--secondary-text);
-
-    & > .container {
-        display: flex;
-        column-gap: 30px;
-    }
+    color: $secondary-text;
     &__description {
         flex: 7;
     }
@@ -25,7 +20,7 @@
             content: '';
             display: block;
             width: 170px;
-            border-top: 1px solid var(--primary-background);
+            border-top: 1px solid $primary-background;
             margin-top: 65px;
         }
     }
@@ -40,27 +35,25 @@
     }
     &__form {
         padding: 35px 50px 0; 
-        background: var(--primary-background);
-        color: var(--dark-color);
+        background: $primary-background;
+        color: $dark-color;
         border-radius: 10px;
         overflow: hidden;
-
         &__title {
             font-family: 'Open Sans', sans-serif;
             font-weight: 700;
             text-align: center;
             margin: 0 0 60px;
             text-transform: uppercase;
-
             &_free {
-                color: var(--primary-color);
+                color: $primary-color;
             }
         }
         & .input_text {
-            border-bottom: 1px solid var(--form-color);
+            border-bottom: 1px solid $form-color;
 
             &:focus {
-                border-color: var(--primary-color);
+                border-color: $primary-color;
             }
         }
         &__item,

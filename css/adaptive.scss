@@ -14,22 +14,11 @@
         padding-right: 15px;
     }
     .header__menu-link,
-    .input_text, 
+    .input_text,
     textarea,
     .tabs__selector,
     .contact-us__form__label {
         font-size: 1em;
-    }
-    .header > .container,
-    .banner > .container,
-    .social-media > .container,
-    .tabs__tab,
-    .benefits__list,
-    .pricing__options,
-    .reviews__author__information,
-    .contact-us__form,
-    .footer__icons__list {
-        column-gap: 20px;
     }
     .header > .container::before,
     .banner > .container::before {
@@ -210,7 +199,7 @@
         position: absolute;
         top: 55px;
         left: 0;
-        background: var(--secondary-background);
+        background: $secondary-background;
         width: calc(100% - 40px);
         height: 0;
         overflow: hidden;
@@ -224,7 +213,7 @@
     .pricing__options,
     .reviews__authors,
     .contact-us__form {
-        flex-direction: column;        
+        flex-direction: column;
     }
     .header__menu-link {
         line-height: 65px;        

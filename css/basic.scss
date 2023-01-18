@@ -6,7 +6,7 @@ body {
     font-weight: 400;    
     font-size: 18px;
     margin: 0;
-    background-color: var(--primary-background);
+    background-color: $primary-background;
 }
 h1 {
     font-family: 'Raleway', sans-serif;
@@ -44,21 +44,27 @@ section {
     position: relative;
     z-index: 1;
 }
+.columns {
+    display: flex;
+    column-gap: 30px;
+    @media (max-width: 1200px) {        
+            column-gap: 20px;
+    }
+}
 .section__title {
     text-align: center;
     text-transform: uppercase;
     margin: 50px 0 40px;
-
     &::after {
         content: '';
     display: block;
     margin: 55px auto 0;
     width: 170px;
-    border-bottom: 1px solid var(--primary-color);
+    border-bottom: 1px solid $primary-color;
     }    
 }
 .section__description-text {
-    color: var(--gray-text);
+    color: $gray-text;
     text-align: center;
     margin: 0px 0 80px;
 }
@@ -72,12 +78,12 @@ button,
     font-family: 'Open Sans', sans-serif;
     font-weight: 600;
     font-size: 1em;
-    color: var(--secondary-text);
+    color: $secondary-text;
     transition-duration: .1s;
 }
 .button_filled,
 .input_submit {
-    background-color: var(--primary-color);
+    background-color: $primary-color;
     border: 0;
     outline: none;
 }
@@ -85,27 +91,27 @@ button,
 .button_filled:focus-visible,
 .input_submit:hover,
 .input_submit:focus-visible {
-    background-color: var(--secondary-color);
+    background-color: $secondary-color;
 }
 .button_filled:active,
 .input_submit:active {
-    background-color: var(--primary-color);
-    box-shadow: 0 0 10px var(--secondary-color) inset;
+    background-color: $primary-color;
+    box-shadow: 0 0 10px $secondary-color inset;
 }
 .button_outline {
-    border: 2px solid var(--primary-background);
+    border: 2px solid $primary-background;
     line-height: 56px;
     background: none;
 }
 .button_outline:hover,
 .button_outline:focus-visible {
-    color: var(--primary-color);
-    border-color: var(--primary-color);
+    color: $primary-color;
+    border-color: $primary-color;
 }
 .button_outline:active {
-    color: var(--secondary-text);
-    border-color: var(--secondary-color);
-    background-color: var(--secondary-color);
+    color: $secondary-text;
+    border-color: $secondary-color;
+    background-color: $secondary-color;
 }
 .input_text {
     padding: 0;
@@ -119,5 +125,25 @@ textarea {
     font-size: 0.77em;    
 }
 .input_text::placeholder {
-    color: var(--form-color);
+    color: $form-color;
 }
+.icons__list {
+    margin: 35px 0 0;
+    padding: 0px;    
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+}
+.icons__link {
+    display: block;
+    width: 70px;
+    line-height: 70px;
+    text-align: center;
+}
+.icons__icon {
+    vertical-align: middle;
+    max-width: 75%;
+    max-height: 75%;
+}
+
+

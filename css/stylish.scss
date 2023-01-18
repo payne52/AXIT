@@ -1,19 +1,19 @@
 .stylish {
-    background: linear-gradient(to bottom, var(--half-opacity-black), var(--half-opacity-black)), url(../images/stylish.webp);
+    background: linear-gradient(to bottom, $half-opacity-black, $half-opacity-black), url(../images/stylish.webp);
     background-position: center bottom;
     position: relative;    
     text-align: center;
-}
-.stylish__title,
-.stylish__description-text {
-    color: var(--secondary-text);
-}
-.stylish__title::after {
-    border-color: var(--primary-background);
-}
-.stylish__description-text {
-    margin-bottom: 75px;
-}
-.stylish__button {
-    max-width: 370px;
+    &__title,
+    &__description-text {
+        color: $secondary-text;
+    }
+    &__title::after {
+        border-color: $primary-background;
+    }
+    &__description-text {
+        margin-bottom: 75px;
+    }
+    &__button {
+        max-width: 370px;
+    }
 }

@@ -1,64 +1,64 @@
-.contact-us__description-text {
-    margin-bottom: 70px;
-}
-.contact-us__form {
-    display: flex;   
-    flex-wrap: wrap;
-    column-gap: 30px;
-}
-.contact-us__form__required,
-.contact-us__form__message {
-    width: calc(50% - 15px);
-}
-.contact-us__form__item {
-    display: flex;
-    flex-direction: row-reverse;
-    margin-bottom: 40px;
-    position: relative;
-}
-.contact-us__form__label {
-    line-height: 50px;
-    font-size: 0.77em;
-    color: var(--form-color);
-}
-.contact-us__form__item .input_text {
-    flex: 1;
-    margin-left: 15px;
-}
-.contact-us__form__item:last-child {
-    margin-bottom: 0;
-}
-.contact-us__form__label[for="message"] {
-    display: block;
-}
-.contact-us__form__textarea {
-    width: 100%;
-    height: calc(100% - 50px);
-    padding: 0;
-    resize: none;
-    border: 0;
-    outline: none;
-}
-.contact-us__form__label::after {
-    content: '';
-    display: block;
-    width: 100%;
-    position: absolute;
-    left: 0;
-    bottom: -1px;
-}
-.contact-us__form__label[for="message"]::after {
-    content: none;
-}
-.contact-us__form__label::after,
-.contact-us__form__textarea {
-    border-bottom: 1px solid var(--form-color);
-}
-.contact-us__form__item .input_text:focus + .contact-us__form__label::after,
-.contact-us__form__textarea:focus {
-    border-color: var(--primary-color);
-}
-.contact-us__form__submit {
-    max-width: 370px;
-    margin: 50px auto 0;
+.contact-us {
+    &__description-text {
+        margin-bottom: 70px;
+    }
+    &__form {
+        flex-wrap: wrap;
+        &__required,
+        &__message {
+            width: calc(50% - 15px);
+        }
+        &__item {
+            display: flex;
+            flex-direction: row-reverse;
+            margin-bottom: 40px;
+            position: relative;
+            &:last-child {
+                margin-bottom: 0;
+            }
+            & .input_text {
+                flex: 1;
+                margin-left: 15px;
+            }
+        }
+        &__label {
+            line-height: 50px;
+            font-size: 0.77em;
+            color: $form-color;
+            &[for="message"] {
+                display: block;
+            }            
+            &[for="message"]::after {
+                content: none;
+            }
+            &::after {
+                content: '';
+                display: block;
+                width: 100%;
+                position: absolute;
+                left: 0;
+                bottom: -1px;
+            }
+        }    
+        &__submit {
+            max-width: 370px;
+            margin: 50px auto 0;
+        }    
+        &__textarea {
+            width: 100%;
+            height: calc(100% - 50px);
+            padding: 0;
+            resize: none;
+            border: 0;
+            outline: none;
+        }
+        &__label::after,
+        &__textarea {
+            border-bottom: 1px solid $form-color;
+        }        
+        &__item .input_text:focus + .contact-us__form__label::after,
+        &__textarea:focus {
+            border-color: $primary-color;
+        }        
+    }
 }
