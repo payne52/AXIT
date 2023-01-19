@@ -1,10 +1,22 @@
 .reviews {
+    @media (max-width: 992px) {
+        padding-top: 0;
+        padding-bottom: 30px;
+    }
     &__content {
         display: flex;
         flex-direction: column-reverse;
     }
+    &__authors {
+        @media (max-width: 992px) {
+            flex-direction: column;
+        }
+    }
     &__author {
         flex: 1;
+        @media (max-width: 992px) {
+            display: none;
+        }
         &__message {
             height: 180px;
             margin-bottom: 65px;
@@ -14,6 +26,12 @@
             border-radius: 10px;
             padding: 0px 20px;
             position: relative;
+            @media (max-width: 1200px) {
+                height: 180px;
+            }
+            @media (max-width: 992px) {
+                margin-bottom: 60px;
+            }
             &::after {
                 content: '';
                 display: block;
@@ -25,7 +43,7 @@
                 position: absolute;
                 bottom: -20px;
                 left: 16%;
-            }
+            }            
         }
         &__message-text {
             color: $gray-text;
@@ -38,9 +56,32 @@
         }
         &__name {
             margin: 15px 0 25px;
+            @media (max-width: 1200px) {
+                margin: 10px 0 15px;
+            }
+            @media (max-width: 992px) {
+                margin: 15px 0 15px;
+            }
+            @media (max-width: 576px) {
+                font-size: 1em;
+            }
         }
         &__post {
             margin: 0 0 15px;
+            @media (max-width: 1200px) {
+                margin-bottom: 10px;
+            }
+            @media (max-width: 576px) {
+                font-size: 0.93em;
+            }
+        }
+        &__avatar-img {
+            @media (max-width: 1200px) {
+                width: 65px;
+            }
+            @media (max-width: 992px) {
+                width: 60px;
+            }
         }
     }
     &__dots {
@@ -48,6 +89,9 @@
         column-gap: 50px;
         justify-content: center;
         margin-top: 20px;
+        @media (max-width: 992px) {
+            display: flex;
+        }
         &__label {
             display: inline-block;
             width: 8px;
@@ -65,3 +109,10 @@
 #review_3:checked ~ .reviews__dots .reviews__dots__label[for="review_3"] {
     background-color: $gray-text;
 }
+@media (max-width: 992px) {
+    #review_1:checked ~ .reviews__authors [data-id="author-1"],
+    #review_2:checked ~ .reviews__authors [data-id="author-2"],
+    #review_3:checked ~ .reviews__authors [data-id="author-3"] {
+        display: block;
+    }
+}    

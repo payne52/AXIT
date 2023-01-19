@@ -7,28 +7,88 @@
     background-repeat: no-repeat;
     background-position: center bottom;
     color: $secondary-text;
+    @media (max-width: 992px) {
+        padding-top: 85px;
+        padding-bottom: 50px;
+    }
+    & > .container {
+        @media (max-width: 992px) {
+            flex-direction: column;
+        }
+    }
+    & > .container::before {
+        @media (max-width: 1200px) {
+            content: '';
+            flex: 1;
+        }
+        @media (max-width: 992px) {
+            content: none;
+        }
+    }
     &__description {
         flex: 7;
+        @media (max-width: 1200px) {
+            flex: 6;
+        }
     }
     &__logo-img {
         width: 170px;
+        @media (max-width: 1200px) {
+            width: 115px;
+            margin-top: 15px;
+        }
+        @media (max-width: 992px) {
+            display: none;
+        }
     }
     &__title {
         margin: 50px 0 45px;   
-        
+        @media (max-width: 1200px) {
+            margin-bottom: 30px;
+        }
+        @media (max-width: 992px) {
+            text-align: center;
+        }
+        @media (max-width: 992px) {
+            margin: 0 0 40px;
+        }
         &::after {
             content: '';
             display: block;
             width: 170px;
             border-top: 1px solid $primary-background;
             margin-top: 65px;
+            @media (max-width: 1200px) {
+                width: 115px;
+                margin-top: 45px;
+            }
+            @media (max-width: 992px) {
+                margin: 45px auto 0;
+            }
         }
     }
     &__text {
         max-width: 40%;
+        @media (max-width: 1200px) {
+            max-width: 50%;
+        }
+        @media (max-width: 992px) {
+            text-align: center;
+            max-width: 100%;
+        }
     }
     &__button {
         margin-top: 40px;
+        @media (max-width: 1200px) {
+            margin-top: 12px;
+            max-width: 180px;
+            line-height: 46px;
+        }
+        @media (max-width: 992px) {
+            max-width: 300px;
+            display: block;
+            margin: 40px auto 55px;
+        }
     }
     &__form-bg {
         flex: 5;
@@ -39,12 +99,21 @@
         color: $dark-color;
         border-radius: 10px;
         overflow: hidden;
+        @media (max-width: 992px) {
+            padding: 30px 20px 0;
+        }
         &__title {
-            font-family: 'Open Sans', sans-serif;
+            font-family: $secondary-font;
             font-weight: 700;
             text-align: center;
             margin: 0 0 60px;
             text-transform: uppercase;
+            @media (max-width: 992px) {
+                margin-bottom: 20px;
+            }
+            @media (max-width: 576px) {
+                font-size: 1em;
+            }
             &_free {
                 color: $primary-color;
             }
@@ -70,6 +139,13 @@
             width: -webkit-fill-available;
             max-width: initial;
             border-radius: 0 0 10px 10px;
+            @media (max-width: 1200px) {
+                font-size: 1.07em;
+                margin-top: 55px;
+            }
+            @media (max-width: 992px) {
+                margin-top: 40px;
+            }
         }
-    }
+    }    
 }

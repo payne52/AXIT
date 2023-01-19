@@ -1,20 +1,45 @@
 .contact-us {
+    @media (max-width: 992px) {
+        padding-top: 1px;
+        padding-bottom: 40px;
+    }
     &__description-text {
         margin-bottom: 70px;
+        @media (max-width: 1200px) {
+            margin-bottom: 60px;
+        }
+        @media (max-width: 992px) {
+            margin-bottom: 50px;
+        }
     }
     &__form {
         flex-wrap: wrap;
+        @media (max-width: 992px) {
+            flex-direction: column;
+        }
         &__required,
         &__message {
             width: calc(50% - 15px);
+            @media (max-width: 1200px) {
+                width: calc(50% - 10px);
+            }
+            @media (max-width: 992px) {
+                width: 100%;
+            }
         }
         &__item {
             display: flex;
             flex-direction: row-reverse;
             margin-bottom: 40px;
             position: relative;
+            @media (max-width: 992px) {
+                margin-bottom: 35px;
+            }
             &:last-child {
                 margin-bottom: 0;
+                @media (max-width: 992px) {
+                    margin-bottom: 35px;
+                }
             }
             & .input_text {
                 flex: 1;
@@ -25,6 +50,9 @@
             line-height: 50px;
             font-size: 0.77em;
             color: $form-color;
+            @media (max-width: 1200px) {
+                font-size: 1em;
+            }
             &[for="message"] {
                 display: block;
             }            
@@ -38,11 +66,18 @@
                 position: absolute;
                 left: 0;
                 bottom: -1px;
-            }
+            }            
         }    
         &__submit {
             max-width: 370px;
             margin: 50px auto 0;
+            @media (max-width: 1200px) {
+                max-width: 320px;
+            }
+            @media (max-width: 992px) {
+                max-width: 300px;
+                line-height: 50px;
+            }
         }    
         &__textarea {
             width: 100%;
@@ -51,6 +86,9 @@
             resize: none;
             border: 0;
             outline: none;
+            @media (max-width: 992px) {
+                height: 170px;
+            }
         }
         &__label::after,
         &__textarea {
@@ -59,6 +97,6 @@
         &__item .input_text:focus + .contact-us__form__label::after,
         &__textarea:focus {
             border-color: $primary-color;
-        }        
+        }         
     }
 }

@@ -3,17 +3,34 @@
     background-position: center bottom;
     position: relative;    
     text-align: center;
+    @media (max-width: 992px) {
+        padding-top: 1px;
+        padding-bottom: 60px;
+    }
     &__title,
     &__description-text {
         color: $secondary-text;
     }
-    &__title::after {
-        border-color: $primary-background;
-    }
     &__description-text {
         margin-bottom: 75px;
+        @media (max-width: 1200px) {
+            margin: 30px 0;
+        }
+        @media (max-width: 992px) {
+            margin-bottom: 60px;
+        }
     }
+    &__title::after {
+        border-color: $primary-background;
+    }    
     &__button {
         max-width: 370px;
+        @media (max-width: 1200px) {
+            max-width: 320px;
+        }
+        @media (max-width: 992px) {
+            max-width: 300px;
+            line-height: 46px;
+        }
     }
 }

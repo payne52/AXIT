@@ -2,41 +2,98 @@ html {
     min-width: 320px;
 }
 body {
-    font-family: 'Raleway', sans-serif;
+    font-family: $primary-font;
     font-weight: 400;    
     font-size: 18px;
     margin: 0;
     background-color: $primary-background;
+    @media (max-width: 1200px) {        
+        font-size: 14px;
+    }
 }
 h1 {
-    font-family: 'Raleway', sans-serif;
+    font-family: $primary-font;
     font-weight: 500;
     font-size: 2.66em;
     text-transform: uppercase;
+    @media (max-width: 1200px) {
+        font-size: 2.57em;
+    }
 }
 h2 {
     font-size: 2em;
     font-weight: 400;
+    @media (max-width: 1200px) {
+        font-size: 1.71em;
+    }
 }
-h3, h4 {
-    font-family: 'Open Sans', sans-serif;
+h3, 
+h4 {
+    font-family: $secondary-font;
     font-weight: 700;
 } 
 h3 {    
     font-size: 1.66em;
     margin-bottom: 42px;
+    @media (max-width: 576px) {
+        font-size: 1.28em;
+    }
 }
 h4 {
     font-size: 1.33em;
     margin-bottom: 40px;
+    @media (max-width: 1200px) {
+        margin-bottom: 30px;
+    }
+    @media (max-width: 992px) {
+        margin-bottom: 35px;
+    }
 }
 h5 {
     font-weight: 400; 
     font-size: 1em;
 }
-section {
+.section {
     padding-top: 50px;
     padding-bottom: 50px;
+    @media (max-width: 1200px) {    
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    &__title {
+        text-align: center;
+        text-transform: uppercase;
+        margin: 50px 0 40px;
+        @media (max-width: 1200px) {
+            margin-top: 45px;
+            margin-bottom: 30px;
+        }
+        @media (max-width: 992px) {
+            margin-bottom: 25px;
+        }
+        &::after {
+            content: '';
+            display: block;
+            margin: 55px auto 0;
+            width: 170px;
+            border-bottom: 1px solid $primary-color;
+            @media (max-width: 1200px) {
+                margin-top: 45px;
+                width: 140px;
+            }
+        }        
+    }
+    &__description-text {
+        color: $gray-text;
+        text-align: center;
+        margin: 0px 0 80px;
+        @media (max-width: 1200px) {
+            margin-bottom: 30px;
+        }
+        @media (max-width: 992px) {
+            margin-bottom: 25px;
+        }
+    }
 }
 .container {    
     max-width: 1170px;
@@ -48,38 +105,25 @@ section {
     display: flex;
     column-gap: 30px;
     @media (max-width: 1200px) {        
-            column-gap: 20px;
+        column-gap: 20px;
     }
 }
-.section__title {
-    text-align: center;
-    text-transform: uppercase;
-    margin: 50px 0 40px;
-    &::after {
-        content: '';
-    display: block;
-    margin: 55px auto 0;
-    width: 170px;
-    border-bottom: 1px solid $primary-color;
-    }    
-}
-.section__description-text {
-    color: $gray-text;
-    text-align: center;
-    margin: 0px 0 80px;
-}
-button,
+
+.button,
 .input_submit {
     cursor: pointer;
     padding: 0;
     line-height: 60px;
     width: 100%;
     max-width: 270px;
-    font-family: 'Open Sans', sans-serif;
+    font-family: $secondary-font;
     font-weight: 600;
     font-size: 1em;
     color: $secondary-text;
     transition-duration: .1s;
+    @media (max-width: 1200px) {
+        font-size: 1.28em;
+    }
 }
 .button_filled,
 .input_submit {
@@ -117,33 +161,68 @@ button,
     padding: 0;
     line-height: 50px;
     border: 0;    
-    outline: none;    
+    outline: none;   
+    @media (max-width: 1200px) {
+        font-size: 1em;
+    } 
 }
 .input_text,
 textarea {
-    font-family: 'Open Sans', sans-serif;
+    font-family: $secondary-font;
     font-size: 0.77em;    
+}
+textarea {
+    @media (max-width: 1200px) {
+        font-size: 1em;
+    }
 }
 .input_text::placeholder {
     color: $form-color;
 }
-.icons__list {
-    margin: 35px 0 0;
-    padding: 0px;    
-    display: flex;
-    justify-content: space-between;
-    list-style-type: none;
-}
-.icons__link {
-    display: block;
-    width: 70px;
-    line-height: 70px;
-    text-align: center;
-}
-.icons__icon {
-    vertical-align: middle;
-    max-width: 75%;
-    max-height: 75%;
+.icons {
+    &__list {
+        margin: 35px 0 0;
+        padding: 0px;    
+        display: flex;
+        justify-content: space-between;
+        list-style-type: none;
+        @media (max-width: 992px) {
+            justify-content: center;
+            column-gap: 15px;
+        }    
+    }
+    &__list-item {
+        @media (max-width: 992px) {
+            width: 10%;
+        }
+        @media (max-width: 576px) {
+            width: auto;
+        }
+    }
+    &__link {
+        display: block;
+        width: 70px;
+        line-height: 70px;
+        text-align: center;
+        @media (max-width: 1200px) {
+            width: 64px;
+            height: 64px;
+            line-height: 64px;
+        }
+        @media (max-width: 992px) {
+            width: 100%;
+        }
+        @media (max-width: 576px) {
+            width: 26px;
+            height: 26px;
+            line-height: 26px; 
+        }    
+    }
+    &__icon {
+        vertical-align: middle;
+        max-width: 75%;
+        max-height: 75%;
+    }
 }
 
 

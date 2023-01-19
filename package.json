@@ -1,7 +1,8 @@
 {
   "devDependencies": {
     "@parcel/transformer-sass": "^2.8.2",
-    "parcel": "^2.8.2"
+    "parcel": "^2.8.2",
+    "sharp": "^0.31.3"
   },
   "name": "axit",
   "description": "*HTML, CSS*",

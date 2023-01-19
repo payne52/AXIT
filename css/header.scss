@@ -3,22 +3,40 @@
     position: sticky;
     z-index: 3;
     top: 0;
+    @media (max-width: 1200px) {            
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    @media (max-width: 992px) {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
     &__menu-list {
         display: flex;
         list-style-type: none;
         margin: 0;
         padding: 0;
+        @media (max-width: 992px) {
+            flex-direction: column;
+        }
     }
     &__menu-link {
         display: block;
         padding: 0 30px;
         line-height: 76px;
-        font-family: 'Open Sans', sans-serif;
+        font-family: $secondary-font;
         font-weight: 600;
         font-size: 0.77em;
         color: $secondary-text;
         text-decoration: none;
         transition-duration: .1s;
+        @media (max-width: 1200px) {
+            font-size: 1em;
+        }
+        @media (max-width: 992px) {
+            line-height: 65px;
+            text-align: center;
+        }
         &:hover,
         &:focus-visible {
             background: $primary-color;
@@ -26,60 +44,92 @@
         }
         &:active {
             background: $secondary-color;    
-        }
+        }        
     }
     &__logo-block {
         flex: 5;
+        @media (max-width: 1200px) {
+            flex: 4;
+        }
     }
     &__logo-link {
         display: inline-block;
         height: 76px;
         line-height: 76px;
         margin-left: -50px;
+        @media (max-width: 1330px) {            
+            margin-left: 0;            
+        }
+        @media (max-width: 992px) {
+            height: 55px;
+            line-height: 55px;
+        }
         &:hover .header__logo-img {
             transform: translateX(10px);
-        }
+        }        
     }
     &__logo-img {
         vertical-align: middle;
         max-height: 30px;
         width: auto;
         transition-duration: .2s;
+        @media (max-width: 992px) {
+            max-height: 22px;
+        }
     }
     &__checkbox {
         display: none;
-        &:checked ~ .header .header__menu-block {
-            height: calc(100vh - 55px);
-        }
-        &:checked ~ section,
-        &:checked ~ footer {
-            display: none;
-            transition-delay: .4s;
-        }
-        &:checked ~ .header .header__menu-toggle__line {
-            background: none;
-        }
-        &:checked ~ .header .header__menu-toggle__line::before,
-        &:checked ~ .header .header__menu-toggle__line::after {
-            margin: 0;
-        }
-        &:checked ~ .header .header__menu-toggle__line::before {
-            transform: rotate(-45deg);
-        }
-        &:checked ~ .header .header__menu-toggle__line::after {
-            transform: rotate(45deg);
-        }
+        &:checked {
+            & ~ .header {
+                & .header__menu-block {
+                    height: calc(100vh - 55px);
+                }       
+                & .header__menu-toggle {
+                    &__line {
+                        background: none;
+                        &::before {
+                            margin: 0;
+                            transform: rotate(-45deg);
+                        }
+                        &::after {
+                            margin: 0;
+                            transform: rotate(45deg);
+                        }
+                    }                    
+                }                     
+            }            
+            & ~ .section,
+            & ~ .footer {
+                display: none;
+                transition-delay: .4s;
+            }
+        }        
     }
     &__menu-block {
         display: flex;
         justify-content: flex-end;
         flex: 7;
+        @media (max-width: 992px) {
+            display: initial;
+            position: absolute;
+            top: 55px;
+            left: 0;
+            background: $secondary-background;
+            width: calc(100% - 40px);
+            height: 0;
+            overflow: hidden;
+            transition: 0.4s;
+            padding: 0 20px;
+        }
     }
     &__menu-toggle {
         display: none;
         width: 55px;
         height: 55px;
         position: relative;
+        @media (max-width: 992px) {
+            display: block;
+        } 
         &__line,
         &__line::before,
         &__line::after {
@@ -101,6 +151,20 @@
         }
         &__line::after {
             margin-top: 8px;
+        }               
+    }  
+    & > .container {      
+        @media (max-width: 992px) {
+            position: initial;
+        }
+    }
+    & > .container::before {
+        @media (max-width: 1200px) {
+            content: '';
+            flex: 1;
+        }
+        @media (max-width: 992px) {
+            content: none;
         }
     }    
 }
