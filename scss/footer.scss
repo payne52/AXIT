@@ -1,51 +1,71 @@
-.footer {
+.footer {    
     background-color: $secondary-background;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    @media (max-width: 1200px) {    
-        padding-left: 15px;
-        padding-right: 15px;
-    }
-    @media (max-width: 992px) {
-        padding-top: 35px;
-        padding-bottom: 45px;
-    }
-    &__icons {
-        &__list {
-            margin: 0;
-            padding: 0;
-            justify-content: center;
-            column-gap: 30px;
-            @media (max-width: 992px) {
-                column-gap: 15px;
-            }
-        }
-        &__link {
-            width: 55px;
-            height: 55px;
-            line-height: 55px;
-            @media (max-width: 1200px) {
-                width: 45px;
-                height: 45px;
-                line-height: 45px;
-            }
-            @media (max-width: 576px) {
-                width: 26px;
-                height: 26px;
-                line-height: 26px; 
-            }   
-        }
-    }    
-    &__copyright {
-        color: $secondary-text;
-        opacity: 0.5;
-        text-align: center;
-        margin-top: 30px;
+    color: $secondary-text;
+    text-align: center;
+    &__container {
+        padding: 70px 0;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
         @media (max-width: 1200px) {
-            font-size: 1.28em;
+            padding: 45px 15px;
         }
         @media (max-width: 992px) {
-            margin-top: 40px;
-        }    
-    }    
+            grid-template-columns: 1fr;
+            padding-top: 35px;
+            padding-bottom: 35px;
+            gap: 70px;
+        }
+    }
+    &__block {
+        &-title {
+            font-family: 'Raleway', sans-serif;
+            font-weight: 700;
+            font-size: 1em;
+            text-transform: uppercase;
+            margin-bottom: 30px;
+            @media (max-width: 1200px) {
+                margin-bottom: 15px;
+            }
+            @media (max-width: 992px) {
+                margin-bottom: 35px;
+            }
+        }
+        &-content {
+            margin: 0;
+        }
+    }
+    &__social {
+        &-list {
+            margin-top: 0px;
+            justify-content: center;
+            gap: 45px;
+            &-item {
+                width: auto;
+            }
+        }
+        &-link {
+            width: 30px;
+            line-height: 30px;
+            height: 30px;
+        }
+    }
+    &__bottom {
+        padding: 25px 15px;
+        background-color: $dark-color;
+        color: $bottom-text;
+        @media (max-width: 1200px) {
+            padding: 15px;
+        }
+        @media (max-width: 992px) {
+            padding: 30px 15px;
+        }
+    }
+    &__copyright {
+        max-width: 370px;
+        margin: auto;
+        &_author {
+            color: $secondary-text;
+        }
+    }
 }

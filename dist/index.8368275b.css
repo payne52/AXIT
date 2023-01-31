@@ -1705,77 +1705,98 @@ h5 {
 }
 
 .footer {
+  color: #fff;
+  text-align: center;
   background-color: #000;
-  padding-top: 30px;
-  padding-bottom: 30px;
+}
+
+.footer__container {
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  padding: 70px 0;
+  display: grid;
 }
 
 @media (max-width: 1200px) {
-  .footer {
-    padding-left: 15px;
-    padding-right: 15px;
+  .footer__container {
+    padding: 45px 15px;
   }
 }
 
 @media (max-width: 992px) {
-  .footer {
+  .footer__container {
+    grid-template-columns: 1fr;
+    gap: 70px;
     padding-top: 35px;
-    padding-bottom: 45px;
+    padding-bottom: 35px;
   }
 }
 
-.footer__icons__list {
-  justify-content: center;
-  column-gap: 30px;
-  margin: 0;
-  padding: 0;
-}
-
-@media (max-width: 992px) {
-  .footer__icons__list {
-    column-gap: 15px;
-  }
-}
-
-.footer__icons__link {
-  width: 55px;
-  height: 55px;
-  line-height: 55px;
+.footer__block-title {
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  font-family: Raleway, sans-serif;
+  font-size: 1em;
+  font-weight: 700;
 }
 
 @media (max-width: 1200px) {
-  .footer__icons__link {
-    width: 45px;
-    height: 45px;
-    line-height: 45px;
+  .footer__block-title {
+    margin-bottom: 15px;
   }
 }
 
-@media (max-width: 576px) {
-  .footer__icons__link {
-    width: 26px;
-    height: 26px;
-    line-height: 26px;
+@media (max-width: 992px) {
+  .footer__block-title {
+    margin-bottom: 35px;
+  }
+}
+
+.footer__block-content {
+  margin: 0;
+}
+
+.footer__social-list {
+  justify-content: center;
+  gap: 45px;
+  margin-top: 0;
+}
+
+.footer__social-list-item {
+  width: auto;
+}
+
+.footer__social-link {
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+}
+
+.footer__bottom {
+  color: gray;
+  background-color: #333;
+  padding: 25px 15px;
+}
+
+@media (max-width: 1200px) {
+  .footer__bottom {
+    padding: 15px;
+  }
+}
+
+@media (max-width: 992px) {
+  .footer__bottom {
+    padding: 30px 15px;
   }
 }
 
 .footer__copyright {
+  max-width: 370px;
+  margin: auto;
+}
+
+.footer__copyright_author {
   color: #fff;
-  opacity: .5;
-  text-align: center;
-  margin-top: 30px;
-}
-
-@media (max-width: 1200px) {
-  .footer__copyright {
-    font-size: 1.28em;
-  }
-}
-
-@media (max-width: 992px) {
-  .footer__copyright {
-    margin-top: 40px;
-  }
 }
 
 /*# sourceMappingURL=index.8368275b.css.map */
