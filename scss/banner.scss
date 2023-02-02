@@ -33,6 +33,8 @@
     }
     &__logo-img {
         width: 170px;
+        animation: logo-appearance .4s ease-out .5s forwards;
+        opacity: 0;
         @media (max-width: 1200px) {
             width: 115px;
             margin-top: 15px;
@@ -58,6 +60,8 @@
             width: 170px;
             border-top: 1px solid $primary-background;
             margin-top: 65px;
+            animation: line-appearance .2s ease-out 1s forwards;
+            opacity: 0;
             @media (max-width: 1200px) {
                 width: 115px;
                 margin-top: 45px;
@@ -149,3 +153,23 @@
         }
     }    
 }
+@keyframes logo-appearance {
+    0% {
+        opacity: 0;
+        transform: translateX(-200px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+@keyframes line-appearance {
+    0% {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+} 

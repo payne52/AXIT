@@ -611,6 +611,8 @@ h5 {
 
 .banner__logo-img {
   width: 170px;
+  opacity: 0;
+  animation: .4s ease-out .5s forwards logo-appearance;
 }
 
 @media (max-width: 1200px) {
@@ -646,8 +648,10 @@ h5 {
 .banner__title:after {
   content: "";
   width: 170px;
+  opacity: 0;
   border-top: 1px solid #fff;
   margin-top: 65px;
+  animation: .2s ease-out 1s forwards line-appearance;
   display: block;
 }
 
@@ -778,6 +782,30 @@ h5 {
 @media (max-width: 992px) {
   .banner__form__submit {
     margin-top: 40px;
+  }
+}
+
+@keyframes logo-appearance {
+  0% {
+    opacity: 0;
+    transform: translateX(-200px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes line-appearance {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
   }
 }
 
@@ -1403,6 +1431,7 @@ h5 {
   background-attachment: scroll, scroll;
   background-origin: padding-box, padding-box;
   background-clip: border-box, border-box;
+  animation: 50s ease-in-out infinite bg-scale;
   position: relative;
 }
 
@@ -1451,6 +1480,20 @@ h5 {
   .stylish__button {
     max-width: 300px;
     line-height: 46px;
+  }
+}
+
+@keyframes bg-scale {
+  0% {
+    background-size: 100%;
+  }
+
+  50% {
+    background-size: 125%;
+  }
+
+  100% {
+    background-size: 100%;
   }
 }
 
